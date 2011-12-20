@@ -1,0 +1,9842 @@
+---
+Aleax:
+  align: 7
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: yellow
+  confer: 0
+  flag1: 16908288
+  flag2: 768
+  frequency: 1
+  gflags: 2064
+  level: 10
+  magres: 30
+  nutrition: 400
+  res: 54
+  size: 2
+  sound: 19
+  speed: 8
+  symbol: A
+  weight: 1450
+Angel:
+  align: 12
+  armor: -4
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 255
+    damagetype: 1
+    number: 2
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 16908289
+  flag2: 768
+  frequency: 1
+  gflags: 2064
+  level: 14
+  magres: 55
+  nutrition: 400
+  res: 54
+  size: 2
+  sound: 29
+  speed: 10
+  symbol: A
+  weight: 1450
+Arch Priest:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 10
+  - attacktype: 3
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 255
+    damagetype: 240
+    number: 2
+    sides: 8
+  - attacktype: 255
+    damagetype: 240
+    number: 2
+    sides: 8
+  color: white
+  confer: 0
+  flag1: 1627521024
+  flag2: 640
+  frequency: 0
+  gflags: 4608
+  level: 25
+  magres: 70
+  nutrition: 400
+  res: 53
+  size: 2
+  sound: 31
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Archon:
+  align: 15
+  armor: -6
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 15
+    damagetype: 11
+    number: 2
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 255
+    damagetype: 241
+    number: 4
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 25296897
+  flag2: 768
+  frequency: 1
+  gflags: 2064
+  level: 19
+  magres: 80
+  nutrition: 400
+  res: 55
+  size: 3
+  sound: 29
+  speed: 16
+  symbol: A
+  weight: 1450
+Ashikaga Takauji:
+  align: -13
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 1
+    damagetype: 252
+    number: 2
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 1610743808
+  flag2: 592
+  frequency: 0
+  gflags: 4624
+  level: 15
+  magres: 40
+  nutrition: 400
+  res: 128
+  size: 2
+  sound: 32
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Asmodeus:
+  align: 20
+  armor: -7
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 4
+    sides: 4
+  - attacktype: 255
+    damagetype: 3
+    number: 6
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 285343745
+  flag2: 833
+  frequency: 0
+  gflags: 5648
+  level: 105
+  magres: 90
+  nutrition: 500
+  res: 35
+  size: 4
+  sound: 28
+  speed: 12
+  symbol: '&'
+  weight: 1500
+Baalzebub:
+  align: 20
+  armor: -5
+  attacks:
+  - attacktype: 2
+    damagetype: 7
+    number: 2
+    sides: 6
+  - attacktype: 15
+    damagetype: 12
+    number: 2
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 285212673
+  flag2: 833
+  frequency: 0
+  gflags: 5648
+  level: 89
+  magres: 85
+  nutrition: 500
+  res: 33
+  size: 3
+  sound: 28
+  speed: 9
+  symbol: '&'
+  weight: 1500
+Chromatic Dragon:
+  align: -14
+  armor: 0
+  attacks:
+  - attacktype: 12
+    damagetype: 242
+    number: 6
+    sides: 8
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  - attacktype: 1
+    damagetype: 252
+    number: 2
+    sides: 8
+  - attacktype: 2
+    damagetype: 0
+    number: 4
+    sides: 8
+  - attacktype: 2
+    damagetype: 0
+    number: 4
+    sides: 8
+  - attacktype: 6
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: magenta
+  confer: 191
+  flag1: 824188928
+  flag2: 592
+  frequency: 0
+  gflags: 4608
+  level: 16
+  magres: 30
+  nutrition: 1700
+  res: 255
+  size: 7
+  sound: 32
+  speed: 12
+  symbol: D
+  weight: 4500
+Croesus:
+  align: 15
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 10
+  color: magenta
+  confer: 0
+  flag1: 1627521024
+  flag2: 512
+  frequency: 0
+  gflags: 4608
+  level: 20
+  magres: 40
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 23
+  speed: 15
+  symbol: '@'
+  weight: 1450
+Cyclops:
+  align: -15
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 8
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 8
+  - attacktype: 1
+    damagetype: 252
+    number: 2
+    sides: 6
+  color: gray
+  confer: 0
+  flag1: 1610743808
+  flag2: 848
+  frequency: 0
+  gflags: 4608
+  level: 18
+  magres: 0
+  nutrition: 700
+  res: 128
+  size: 4
+  sound: 32
+  speed: 12
+  symbol: H
+  weight: 1900
+Dark One:
+  align: -10
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 1
+    damagetype: 252
+    number: 1
+    sides: 4
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  color: black
+  confer: 0
+  flag1: 1610743808
+  flag2: 592
+  frequency: 0
+  gflags: 4624
+  level: 15
+  magres: 80
+  nutrition: 400
+  res: 128
+  size: 2
+  sound: 32
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Death:
+  align: 0
+  armor: -5
+  attacks:
+  - attacktype: 5
+    damagetype: 37
+    number: 8
+    sides: 8
+  - attacktype: 5
+    damagetype: 37
+    number: 8
+    sides: 8
+  color: magenta
+  confer: 0
+  flag1: 92405761
+  flag2: 768
+  frequency: 0
+  gflags: 4608
+  level: 30
+  magres: 100
+  nutrition: 1
+  res: 183
+  size: 2
+  sound: 30
+  speed: 12
+  symbol: '&'
+  weight: 1450
+Demogorgon:
+  align: -20
+  armor: -8
+  attacks:
+  - attacktype: 255
+    damagetype: 241
+    number: 8
+    sides: 6
+  - attacktype: 6
+    damagetype: 15
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 33
+    number: 1
+    sides: 6
+  - attacktype: 1
+    damagetype: 33
+    number: 1
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 285220865
+  flag2: 769
+  frequency: 0
+  gflags: 5648
+  level: 106
+  magres: 95
+  nutrition: 500
+  res: 33
+  size: 4
+  sound: 4
+  speed: 15
+  symbol: '&'
+  weight: 1500
+Dispater:
+  align: 15
+  armor: -2
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 6
+  - attacktype: 255
+    damagetype: 241
+    number: 6
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 285343745
+  flag2: 769
+  frequency: 0
+  gflags: 5648
+  level: 78
+  magres: 80
+  nutrition: 500
+  res: 33
+  size: 2
+  sound: 28
+  speed: 15
+  symbol: '&'
+  weight: 1500
+Elvenking:
+  align: -10
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: magenta
+  confer: 4
+  flag1: 1627521024
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 9
+  magres: 25
+  nutrition: 350
+  res: 4
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 800
+Famine:
+  align: 0
+  armor: -5
+  attacks:
+  - attacktype: 5
+    damagetype: 39
+    number: 8
+    sides: 8
+  - attacktype: 5
+    damagetype: 39
+    number: 8
+    sides: 8
+  color: magenta
+  confer: 0
+  flag1: 92405761
+  flag2: 768
+  frequency: 0
+  gflags: 4608
+  level: 30
+  magres: 100
+  nutrition: 1
+  res: 183
+  size: 2
+  sound: 30
+  speed: 12
+  symbol: '&'
+  weight: 1450
+Geryon:
+  align: 15
+  armor: -3
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 6
+  - attacktype: 6
+    damagetype: 7
+    number: 2
+    sides: 4
+  color: magenta
+  confer: 0
+  flag1: 285736961
+  flag2: 769
+  frequency: 0
+  gflags: 5648
+  level: 72
+  magres: 75
+  nutrition: 500
+  res: 33
+  size: 4
+  sound: 28
+  speed: 3
+  symbol: '&'
+  weight: 1500
+Grand Master:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 4
+    sides: 10
+  - attacktype: 3
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 255
+    damagetype: 240
+    number: 2
+    sides: 8
+  - attacktype: 255
+    damagetype: 240
+    number: 2
+    sides: 8
+  color: black
+  confer: 0
+  flag1: 1090650112
+  flag2: 640
+  frequency: 0
+  gflags: 4608
+  level: 25
+  magres: 70
+  nutrition: 400
+  res: 53
+  size: 2
+  sound: 31
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Green-elf:
+  align: -6
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: bright green
+  confer: 4
+  flag1: 1627521024
+  flag2: 768
+  frequency: 2
+  gflags: 160
+  level: 5
+  magres: 10
+  nutrition: 350
+  res: 4
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 800
+Grey-elf:
+  align: -7
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: gray
+  confer: 4
+  flag1: 1627521024
+  flag2: 768
+  frequency: 2
+  gflags: 160
+  level: 6
+  magres: 10
+  nutrition: 350
+  res: 4
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 800
+Hippocrates:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 1610743808
+  flag2: 640
+  frequency: 0
+  gflags: 4608
+  level: 20
+  magres: 40
+  nutrition: 400
+  res: 32
+  size: 2
+  sound: 31
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Ixoth:
+  align: -14
+  armor: -1
+  attacks:
+  - attacktype: 12
+    damagetype: 2
+    number: 8
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 4
+    sides: 8
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 1
+    damagetype: 252
+    number: 2
+    sides: 4
+  color: red
+  confer: 1
+  flag1: 555753473
+  flag2: 592
+  frequency: 0
+  gflags: 4608
+  level: 15
+  magres: 20
+  nutrition: 1600
+  res: 129
+  size: 7
+  sound: 32
+  speed: 12
+  symbol: D
+  weight: 4500
+Juiblex:
+  align: -15
+  armor: -7
+  attacks:
+  - attacktype: 11
+    damagetype: 33
+    number: 4
+    sides: 10
+  - attacktype: 10
+    damagetype: 8
+    number: 3
+    sides: 6
+  color: bright green
+  confer: 0
+  flag1: 419463685
+  flag2: 321
+  frequency: 0
+  gflags: 5648
+  level: 50
+  magres: 65
+  nutrition: 0
+  res: 225
+  size: 3
+  sound: 12
+  speed: 3
+  symbol: '&'
+  weight: 1500
+King Arthur:
+  align: 20
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 1610743808
+  flag2: 640
+  frequency: 0
+  gflags: 4608
+  level: 20
+  magres: 40
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 31
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Lord Carnarvon:
+  align: 20
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 1610743840
+  flag2: 640
+  frequency: 0
+  gflags: 4608
+  level: 20
+  magres: 30
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 31
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Lord Sato:
+  align: 20
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 1610743808
+  flag2: 640
+  frequency: 0
+  gflags: 4608
+  level: 20
+  magres: 30
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 31
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Lord Surtur:
+  align: 12
+  armor: 2
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 10
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 10
+  - attacktype: 1
+    damagetype: 252
+    number: 2
+    sides: 6
+  color: magenta
+  confer: 1
+  flag1: 1610743808
+  flag2: 848
+  frequency: 0
+  gflags: 4608
+  level: 15
+  magres: 50
+  nutrition: 850
+  res: 129
+  size: 4
+  sound: 32
+  speed: 12
+  symbol: H
+  weight: 2250
+Master Assassin:
+  align: 18
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 7
+    number: 2
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 1
+    damagetype: 252
+    number: 2
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 1610743808
+  flag2: 592
+  frequency: 0
+  gflags: 4608
+  level: 15
+  magres: 30
+  nutrition: 400
+  res: 128
+  size: 2
+  sound: 32
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Master Kaen:
+  align: -20
+  armor: -10
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 16
+    sides: 2
+  - attacktype: 1
+    damagetype: 0
+    number: 16
+    sides: 2
+  - attacktype: 255
+    damagetype: 240
+    number: 0
+    sides: 0
+  - attacktype: 1
+    damagetype: 252
+    number: 1
+    sides: 4
+  color: magenta
+  confer: 32
+  flag1: 1090650112
+  flag2: 592
+  frequency: 0
+  gflags: 4608
+  level: 25
+  magres: 10
+  nutrition: 400
+  res: 160
+  size: 2
+  sound: 32
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Master of Thieves:
+  align: -20
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 1
+    damagetype: 252
+    number: 2
+    sides: 4
+  color: magenta
+  confer: 0
+  flag1: 1610743808
+  flag2: 640
+  frequency: 0
+  gflags: 4608
+  level: 20
+  magres: 30
+  nutrition: 400
+  res: 128
+  size: 2
+  sound: 31
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Medusa:
+  align: -15
+  armor: 2
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 15
+    damagetype: 18
+    number: 0
+    sides: 0
+  - attacktype: 2
+    damagetype: 7
+    number: 1
+    sides: 6
+  color: bright green
+  confer: 160
+  flag1: 1879179779
+  flag2: 576
+  frequency: 0
+  gflags: 4608
+  level: 20
+  magres: 50
+  nutrition: 400
+  res: 160
+  size: 3
+  sound: 7
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Minion of Huhetotl:
+  align: -14
+  armor: -2
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 8
+    sides: 4
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 6
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  - attacktype: 1
+    damagetype: 252
+    number: 2
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 285212673
+  flag2: 848
+  frequency: 0
+  gflags: 4624
+  level: 16
+  magres: 75
+  nutrition: 400
+  res: 161
+  size: 3
+  sound: 32
+  speed: 12
+  symbol: '&'
+  weight: 1450
+Mordor orc:
+  align: -5
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: blue
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 1
+  gflags: 96
+  level: 3
+  magres: 0
+  nutrition: 200
+  res: 0
+  size: 2
+  sound: 9
+  speed: 5
+  symbol: o
+  weight: 1200
+Nalzok:
+  align: -127
+  armor: -2
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 8
+    sides: 4
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 6
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  - attacktype: 1
+    damagetype: 252
+    number: 2
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 285212673
+  flag2: 848
+  frequency: 0
+  gflags: 4624
+  level: 16
+  magres: 85
+  nutrition: 400
+  res: 161
+  size: 3
+  sound: 32
+  speed: 12
+  symbol: '&'
+  weight: 1450
+Nazgul:
+  align: -17
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 15
+    number: 1
+    sides: 4
+  - attacktype: 12
+    damagetype: 4
+    number: 2
+    sides: 25
+  color: magenta
+  confer: 0
+  flag1: 132096
+  flag2: 0
+  frequency: 1
+  gflags: 48
+  level: 13
+  magres: 25
+  nutrition: 0
+  res: 38
+  size: 2
+  sound: 37
+  speed: 12
+  symbol: W
+  weight: 1450
+Neferet the Green:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 255
+    damagetype: 241
+    number: 2
+    sides: 8
+  color: green
+  confer: 0
+  flag1: 1610743808
+  flag2: 640
+  frequency: 0
+  gflags: 4608
+  level: 20
+  magres: 60
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 31
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Norn:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 1610743808
+  flag2: 640
+  frequency: 0
+  gflags: 4608
+  level: 20
+  magres: 80
+  nutrition: 400
+  res: 2
+  size: 2
+  sound: 31
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Olog-hai:
+  align: -7
+  armor: -4
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 3
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 545390592
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 13
+  magres: 0
+  nutrition: 400
+  res: 0
+  size: 3
+  sound: 9
+  speed: 12
+  symbol: T
+  weight: 1500
+Oracle:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 0
+    damagetype: 1
+    number: 0
+    sides: 4
+  color: bright blue
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 4608
+  level: 12
+  magres: 50
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 35
+  speed: 0
+  symbol: '@'
+  weight: 1450
+Orcus:
+  align: -20
+  armor: -6
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 3
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 4
+  - attacktype: 255
+    damagetype: 241
+    number: 8
+    sides: 6
+  - attacktype: 6
+    damagetype: 7
+    number: 2
+    sides: 4
+  color: magenta
+  confer: 0
+  flag1: 285212673
+  flag2: 837
+  frequency: 0
+  gflags: 5648
+  level: 66
+  magres: 85
+  nutrition: 500
+  res: 33
+  size: 4
+  sound: 9
+  speed: 9
+  symbol: '&'
+  weight: 1500
+Orion:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 1627521538
+  flag2: 896
+  frequency: 0
+  gflags: 4608
+  level: 20
+  magres: 30
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 31
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Pelias:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 1610743808
+  flag2: 640
+  frequency: 0
+  gflags: 4608
+  level: 20
+  magres: 30
+  nutrition: 400
+  res: 32
+  size: 2
+  sound: 31
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Pestilence:
+  align: 0
+  armor: -5
+  attacks:
+  - attacktype: 5
+    damagetype: 38
+    number: 8
+    sides: 8
+  - attacktype: 5
+    damagetype: 38
+    number: 8
+    sides: 8
+  color: magenta
+  confer: 0
+  flag1: 92405761
+  flag2: 768
+  frequency: 0
+  gflags: 4608
+  level: 30
+  magres: 100
+  nutrition: 1
+  res: 183
+  size: 2
+  sound: 30
+  speed: 12
+  symbol: '&'
+  weight: 1450
+Scorpius:
+  align: -15
+  armor: 10
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 1
+    damagetype: 252
+    number: 2
+    sides: 6
+  - attacktype: 6
+    damagetype: 33
+    number: 1
+    sides: 4
+  color: magenta
+  confer: 32
+  flag1: 809771008
+  flag2: 80
+  frequency: 0
+  gflags: 4608
+  level: 15
+  magres: 0
+  nutrition: 350
+  res: 160
+  size: 2
+  sound: 32
+  speed: 12
+  symbol: s
+  weight: 750
+Shaman Karnov:
+  align: 20
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: magenta
+  confer: 0
+  flag1: 1610743808
+  flag2: 640
+  frequency: 0
+  gflags: 4608
+  level: 20
+  magres: 30
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 31
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Thoth Amon:
+  align: -14
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  - attacktype: 1
+    damagetype: 252
+    number: 1
+    sides: 4
+  color: magenta
+  confer: 0
+  flag1: 1610743808
+  flag2: 592
+  frequency: 0
+  gflags: 4624
+  level: 16
+  magres: 10
+  nutrition: 400
+  res: 160
+  size: 2
+  sound: 32
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Uruk-hai:
+  align: -4
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: black
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 1
+  gflags: 96
+  level: 3
+  magres: 0
+  nutrition: 300
+  res: 0
+  size: 2
+  sound: 9
+  speed: 7
+  symbol: o
+  weight: 1300
+Vlad the Impaler:
+  align: -10
+  armor: -3
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 10
+  - attacktype: 2
+    damagetype: 15
+    number: 1
+    sides: 10
+  color: magenta
+  confer: 0
+  flag1: 276956161
+  flag2: 584
+  frequency: 0
+  gflags: 4624
+  level: 14
+  magres: 80
+  nutrition: 400
+  res: 36
+  size: 2
+  sound: 27
+  speed: 18
+  symbol: V
+  weight: 1450
+Wizard of Yendor:
+  align: A_NONE
+  armor: -8
+  attacks:
+  - attacktype: 1
+    damagetype: 252
+    number: 2
+    sides: 12
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  color: magenta
+  confer: 33
+  flag1: 1736573953
+  flag2: 607
+  frequency: 0
+  gflags: 4608
+  level: 30
+  magres: 100
+  nutrition: 400
+  res: 33
+  size: 2
+  sound: 29
+  speed: 12
+  symbol: '@'
+  weight: 1450
+Woodland-elf:
+  align: -5
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: green
+  confer: 4
+  flag1: 1627521024
+  flag2: 768
+  frequency: 2
+  gflags: 160
+  level: 4
+  magres: 10
+  nutrition: 350
+  res: 4
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 800
+Yeenoghu:
+  align: -15
+  armor: -5
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 3
+    sides: 6
+  - attacktype: 254
+    damagetype: 25
+    number: 2
+    sides: 8
+  - attacktype: 1
+    damagetype: 14
+    number: 1
+    sides: 6
+  - attacktype: 255
+    damagetype: 1
+    number: 2
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 285212673
+  flag2: 769
+  frequency: 0
+  gflags: 5648
+  level: 56
+  magres: 80
+  nutrition: 500
+  res: 33
+  size: 3
+  sound: 9
+  speed: 18
+  symbol: '&'
+  weight: 900
+abbot:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 8
+    sides: 2
+  - attacktype: 3
+    damagetype: 12
+    number: 3
+    sides: 2
+  - attacktype: 255
+    damagetype: 240
+    number: 0
+    sides: 0
+  color: white
+  confer: 0
+  flag1: 1073872896
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 5
+  magres: 20
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 33
+  speed: 12
+  symbol: '@'
+  weight: 1450
+acid blob:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 0
+    damagetype: 8
+    number: 1
+    sides: 8
+  color: green
+  confer: 128
+  flag1: 134345732
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 1
+  magres: 0
+  nutrition: 10
+  res: 228
+  size: 0
+  sound: 0
+  speed: 3
+  symbol: b
+  weight: 30
+acolyte:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 255
+    damagetype: 240
+    number: 0
+    sides: 0
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 5
+  magres: 20
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 33
+  speed: 12
+  symbol: '@'
+  weight: 1450
+air elemental:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 11
+    damagetype: 0
+    number: 1
+    sides: 10
+  color: cyan
+  confer: 0
+  flag1: 1175553
+  flag2: 0
+  frequency: 1
+  gflags: 16
+  level: 8
+  magres: 30
+  nutrition: 0
+  res: 160
+  size: 4
+  sound: 0
+  speed: 36
+  symbol: E
+  weight: 0
+aligned priest:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 10
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 255
+    damagetype: 240
+    number: 0
+    sides: 0
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 12
+  magres: 50
+  nutrition: 400
+  res: 16
+  size: 2
+  sound: 36
+  speed: 12
+  symbol: '@'
+  weight: 1450
+ape:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: brown
+  confer: 0
+  flag1: 537264128
+  flag2: 512
+  frequency: 2
+  gflags: 160
+  level: 4
+  magres: 0
+  nutrition: 500
+  res: 0
+  size: 3
+  sound: 4
+  speed: 12
+  symbol: Y
+  weight: 1100
+apprentice:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 5
+  magres: 30
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 33
+  speed: 12
+  symbol: '@'
+  weight: 1450
+arch-lich:
+  align: -15
+  armor: -6
+  attacks:
+  - attacktype: 5
+    damagetype: 3
+    number: 5
+    sides: 6
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  color: magenta
+  confer: 3
+  flag1: 276956160
+  flag2: 260
+  frequency: 1
+  gflags: 1072
+  level: 25
+  magres: 90
+  nutrition: 100
+  res: 55
+  size: 2
+  sound: 18
+  speed: 9
+  symbol: L
+  weight: 1200
+archeologist:
+  align: 3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743840
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 1
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+attendant:
+  align: 3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 5
+  magres: 10
+  nutrition: 400
+  res: 32
+  size: 2
+  sound: 33
+  speed: 12
+  symbol: '@'
+  weight: 1450
+baby black dragon:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: black
+  confer: 0
+  flag1: 538976257
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 12
+  magres: 10
+  nutrition: 500
+  res: 8
+  size: 4
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 1500
+baby blue dragon:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: blue
+  confer: 0
+  flag1: 538976257
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 12
+  magres: 10
+  nutrition: 500
+  res: 16
+  size: 4
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 1500
+baby crocodile:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 537141762
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 3
+  magres: 0
+  nutrition: 200
+  res: 0
+  size: 2
+  sound: 0
+  speed: 6
+  symbol: ':'
+  weight: 200
+baby gray dragon:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: gray
+  confer: 0
+  flag1: 538976257
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 12
+  magres: 10
+  nutrition: 500
+  res: 0
+  size: 4
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 1500
+baby green dragon:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: green
+  confer: 0
+  flag1: 807411713
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 12
+  magres: 10
+  nutrition: 500
+  res: 32
+  size: 4
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 1500
+baby long worm:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: brown
+  confer: 0
+  flag1: 537683968
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 8
+  magres: 0
+  nutrition: 250
+  res: 0
+  size: 3
+  sound: 0
+  speed: 3
+  symbol: w
+  weight: 600
+baby orange dragon:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: orange
+  confer: 0
+  flag1: 538976257
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 12
+  magres: 10
+  nutrition: 500
+  res: 4
+  size: 4
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 1500
+baby purple worm:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 537681920
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 8
+  magres: 0
+  nutrition: 250
+  res: 0
+  size: 3
+  sound: 0
+  speed: 3
+  symbol: w
+  weight: 600
+baby red dragon:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 538976257
+  flag2: 512
+  frequency: 0
+  gflags: 32
+  level: 12
+  magres: 10
+  nutrition: 500
+  res: 1
+  size: 4
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 1500
+baby silver dragon:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: bright cyan
+  confer: 0
+  flag1: 538976257
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 12
+  magres: 10
+  nutrition: 500
+  res: 0
+  size: 4
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 1500
+baby white dragon:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 538976257
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 12
+  magres: 10
+  nutrition: 500
+  res: 2
+  size: 4
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 1500
+baby yellow dragon:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: yellow
+  confer: 0
+  flag1: 673193985
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 12
+  magres: 10
+  nutrition: 500
+  res: 192
+  size: 4
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 1500
+balrog:
+  align: -14
+  armor: -2
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 8
+    sides: 4
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 285212673
+  flag2: 768
+  frequency: 1
+  gflags: 1040
+  level: 16
+  magres: 75
+  nutrition: 400
+  res: 33
+  size: 3
+  sound: 0
+  speed: 5
+  symbol: '&'
+  weight: 1450
+baluchitherium:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 5
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 5
+    sides: 4
+  color: gray
+  confer: 0
+  flag1: 1076109312
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 14
+  magres: 0
+  nutrition: 800
+  res: 0
+  size: 3
+  sound: 0
+  speed: 12
+  symbol: q
+  weight: 3800
+barbarian:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 1
+  nutrition: 400
+  res: 32
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+barbed devil:
+  align: 8
+  armor: 0
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 6
+    damagetype: 0
+    number: 3
+    sides: 4
+  color: red
+  confer: 0
+  flag1: 270532608
+  flag2: 768
+  frequency: 2
+  gflags: 1168
+  level: 8
+  magres: 35
+  nutrition: 400
+  res: 33
+  size: 2
+  sound: 0
+  speed: 12
+  symbol: '&'
+  weight: 1450
+barrow wight:
+  align: -3
+  armor: 5
+  attacks:
+  - attacktype: 254
+    damagetype: 15
+    number: 0
+    sides: 0
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: gray
+  confer: 0
+  flag1: 132096
+  flag2: 0
+  frequency: 1
+  gflags: 48
+  level: 3
+  magres: 5
+  nutrition: 0
+  res: 38
+  size: 2
+  sound: 37
+  speed: 12
+  symbol: W
+  weight: 1200
+bat:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 537141249
+  flag2: 512
+  frequency: 1
+  gflags: 160
+  level: 0
+  magres: 0
+  nutrition: 20
+  res: 0
+  size: 0
+  sound: 5
+  speed: 22
+  symbol: B
+  weight: 20
+black dragon:
+  align: -6
+  armor: -1
+  attacks:
+  - attacktype: 12
+    damagetype: 5
+    number: 4
+    sides: 10
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: black
+  confer: 8
+  flag1: 559947777
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 15
+  magres: 20
+  nutrition: 1500
+  res: 8
+  size: 7
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 4500
+black light:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 13
+    damagetype: 36
+    number: 10
+    sides: 12
+  color: black
+  confer: 0
+  flag1: 17955845
+  flag2: 0
+  frequency: 2
+  gflags: 48
+  level: 5
+  magres: 0
+  nutrition: 0
+  res: 255
+  size: 1
+  sound: 0
+  speed: 15
+  symbol: y
+  weight: 0
+black naga:
+  align: 4
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 10
+    damagetype: 8
+    number: 0
+    sides: 0
+  color: black
+  confer: 160
+  flag1: 677931008
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 8
+  magres: 10
+  nutrition: 400
+  res: 224
+  size: 4
+  sound: 18
+  speed: 14
+  symbol: N
+  weight: 2600
+black naga hatchling:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: black
+  confer: 160
+  flag1: 673736704
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 3
+  magres: 0
+  nutrition: 100
+  res: 224
+  size: 3
+  sound: 18
+  speed: 10
+  symbol: N
+  weight: 500
+black pudding:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 42
+    number: 3
+    sides: 8
+  - attacktype: 0
+    damagetype: 42
+    number: 0
+    sides: 0
+  color: black
+  confer: 50
+  flag1: 1744958468
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 10
+  magres: 0
+  nutrition: 250
+  res: 242
+  size: 3
+  sound: 0
+  speed: 6
+  symbol: P
+  weight: 900
+black unicorn:
+  align: -7
+  armor: 2
+  attacks:
+  - attacktype: 4
+    damagetype: 0
+    number: 1
+    sides: 12
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: black
+  confer: 32
+  flag1: 1073750016
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 4
+  magres: 70
+  nutrition: 300
+  res: 32
+  size: 3
+  sound: 10
+  speed: 24
+  symbol: u
+  weight: 1300
+blue dragon:
+  align: -7
+  armor: -1
+  attacks:
+  - attacktype: 12
+    damagetype: 6
+    number: 4
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: blue
+  confer: 16
+  flag1: 559947777
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 15
+  magres: 20
+  nutrition: 1500
+  res: 16
+  size: 7
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 4500
+blue jelly:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 0
+    damagetype: 3
+    number: 0
+    sides: 6
+  color: blue
+  confer: 34
+  flag1: 130052
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 4
+  magres: 10
+  nutrition: 20
+  res: 34
+  size: 2
+  sound: 0
+  speed: 0
+  symbol: j
+  weight: 50
+bone devil:
+  align: -9
+  armor: -1
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 3
+    sides: 4
+  - attacktype: 6
+    damagetype: 7
+    number: 2
+    sides: 4
+  color: gray
+  confer: 0
+  flag1: 268435456
+  flag2: 768
+  frequency: 2
+  gflags: 1168
+  level: 9
+  magres: 40
+  nutrition: 400
+  res: 33
+  size: 3
+  sound: 0
+  speed: 15
+  symbol: '&'
+  weight: 1450
+brown mold:
+  align: 0
+  armor: 9
+  attacks:
+  - attacktype: 0
+    damagetype: 3
+    number: 0
+    sides: 6
+  color: brown
+  confer: 34
+  flag1: 130048
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 1
+  magres: 0
+  nutrition: 30
+  res: 34
+  size: 1
+  sound: 0
+  speed: 0
+  symbol: F
+  weight: 50
+brown pudding:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 2
+    damagetype: 34
+    number: 0
+    sides: 0
+  color: brown
+  confer: 50
+  flag1: 1744958468
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 250
+  res: 242
+  size: 2
+  sound: 0
+  speed: 3
+  symbol: P
+  weight: 500
+bugbear:
+  align: -6
+  armor: 5
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 3
+  magres: 0
+  nutrition: 250
+  res: 0
+  size: 3
+  sound: 4
+  speed: 9
+  symbol: h
+  weight: 1250
+captain:
+  align: -5
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 4
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 4
+  color: blue
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 12
+  magres: 15
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 22
+  speed: 10
+  symbol: '@'
+  weight: 1450
+carnivorous ape:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 7
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: black
+  confer: 0
+  flag1: 537264128
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 6
+  magres: 0
+  nutrition: 550
+  res: 0
+  size: 3
+  sound: 4
+  speed: 12
+  symbol: Y
+  weight: 1250
+cave spider:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 2
+  color: gray
+  confer: 32
+  flag1: 541335680
+  flag2: 0
+  frequency: 2
+  gflags: 160
+  level: 1
+  magres: 0
+  nutrition: 50
+  res: 32
+  size: 0
+  sound: 0
+  speed: 12
+  symbol: s
+  weight: 50
+caveman:
+  align: 1
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 0
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+cavewoman:
+  align: 1
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 0
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+centipede:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 2
+    damagetype: 7
+    number: 1
+    sides: 3
+  color: yellow
+  confer: 32
+  flag1: 541335680
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 2
+  magres: 0
+  nutrition: 50
+  res: 32
+  size: 0
+  sound: 0
+  speed: 4
+  symbol: s
+  weight: 50
+chameleon:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 4
+    sides: 2
+  color: brown
+  confer: 0
+  flag1: 537141248
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 6
+  magres: 10
+  nutrition: 100
+  res: 0
+  size: 0
+  sound: 0
+  speed: 5
+  symbol: ':'
+  weight: 100
+chickatrice:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 2
+  - attacktype: 5
+    damagetype: 18
+    number: 0
+    sides: 0
+  - attacktype: 0
+    damagetype: 18
+    number: 0
+    sides: 0
+  color: brown
+  confer: 160
+  flag1: 1610883072
+  flag2: 512
+  frequency: 1
+  gflags: 160
+  level: 4
+  magres: 30
+  nutrition: 10
+  res: 160
+  size: 0
+  sound: 7
+  speed: 4
+  symbol: c
+  weight: 10
+chieftain:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 5
+  magres: 10
+  nutrition: 400
+  res: 32
+  size: 2
+  sound: 33
+  speed: 12
+  symbol: '@'
+  weight: 1450
+clay golem:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 10
+  color: brown
+  confer: 0
+  flag1: 2294784
+  flag2: 0
+  frequency: 1
+  gflags: 16
+  level: 11
+  magres: 40
+  nutrition: 0
+  res: 36
+  size: 3
+  sound: 0
+  speed: 7
+  symbol: ''''
+  weight: 1550
+cobra:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 7
+    number: 2
+    sides: 4
+  - attacktype: 10
+    damagetype: 11
+    number: 0
+    sides: 0
+  color: blue
+  confer: 32
+  flag1: 810313858
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 6
+  magres: 0
+  nutrition: 100
+  res: 32
+  size: 2
+  sound: 7
+  speed: 18
+  symbol: S
+  weight: 250
+cockatrice:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 5
+    damagetype: 18
+    number: 0
+    sides: 0
+  - attacktype: 0
+    damagetype: 18
+    number: 0
+    sides: 0
+  color: yellow
+  confer: 160
+  flag1: 1615077376
+  flag2: 512
+  frequency: 5
+  gflags: 32
+  level: 5
+  magres: 30
+  nutrition: 30
+  res: 160
+  size: 1
+  sound: 7
+  speed: 6
+  symbol: c
+  weight: 30
+couatl:
+  align: 7
+  armor: 5
+  attacks:
+  - attacktype: 2
+    damagetype: 7
+    number: 2
+    sides: 4
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 7
+    damagetype: 28
+    number: 2
+    sides: 4
+  color: green
+  confer: 0
+  flag1: 268435457
+  flag2: 768
+  frequency: 1
+  gflags: 2192
+  level: 8
+  magres: 30
+  nutrition: 400
+  res: 32
+  size: 3
+  sound: 7
+  speed: 10
+  symbol: A
+  weight: 900
+coyote:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 160
+  level: 1
+  magres: 0
+  nutrition: 250
+  res: 0
+  size: 1
+  sound: 1
+  speed: 12
+  symbol: d
+  weight: 300
+crocodile:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 4
+    sides: 2
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 12
+  color: brown
+  confer: 0
+  flag1: 543433218
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 6
+  magres: 0
+  nutrition: 400
+  res: 0
+  size: 3
+  sound: 0
+  speed: 9
+  symbol: ':'
+  weight: 1450
+demilich:
+  align: -12
+  armor: -2
+  attacks:
+  - attacktype: 5
+    damagetype: 3
+    number: 3
+    sides: 4
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  color: red
+  confer: 2
+  flag1: 276956160
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 14
+  magres: 60
+  nutrition: 100
+  res: 38
+  size: 2
+  sound: 18
+  speed: 9
+  symbol: L
+  weight: 1200
+dingo:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: yellow
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 4
+  magres: 0
+  nutrition: 200
+  res: 0
+  size: 2
+  sound: 1
+  speed: 16
+  symbol: d
+  weight: 400
+disenchanter:
+  align: -3
+  armor: -10
+  attacks:
+  - attacktype: 1
+    damagetype: 41
+    number: 4
+    sides: 4
+  - attacktype: 0
+    damagetype: 41
+    number: 0
+    sides: 0
+  color: blue
+  confer: 0
+  flag1: 537133056
+  flag2: 512
+  frequency: 2
+  gflags: 1056
+  level: 12
+  magres: 0
+  nutrition: 200
+  res: 0
+  size: 3
+  sound: 4
+  speed: 12
+  symbol: R
+  weight: 750
+djinni:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 8
+  color: yellow
+  confer: 0
+  flag1: 268566529
+  flag2: 512
+  frequency: 0
+  gflags: 528
+  level: 7
+  magres: 30
+  nutrition: 400
+  res: 160
+  size: 2
+  sound: 24
+  speed: 12
+  symbol: '&'
+  weight: 1500
+dog:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 4
+  magres: 0
+  nutrition: 200
+  res: 0
+  size: 2
+  sound: 1
+  speed: 16
+  symbol: d
+  weight: 400
+doppelganger:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 12
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 9
+  magres: 20
+  nutrition: 400
+  res: 4
+  size: 2
+  sound: 19
+  speed: 12
+  symbol: '@'
+  weight: 1450
+dust vortex:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 11
+    damagetype: 11
+    number: 2
+    sides: 8
+  color: brown
+  confer: 0
+  flag1: 128001
+  flag2: 0
+  frequency: 2
+  gflags: 48
+  level: 4
+  magres: 30
+  nutrition: 0
+  res: 164
+  size: 4
+  sound: 0
+  speed: 20
+  symbol: v
+  weight: 0
+dwarf:
+  align: 4
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: red
+  confer: 0
+  flag1: 1610743840
+  flag2: 768
+  frequency: 3
+  gflags: 32
+  level: 2
+  magres: 10
+  nutrition: 300
+  res: 0
+  size: 2
+  sound: 20
+  speed: 6
+  symbol: h
+  weight: 900
+dwarf king:
+  align: 6
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 1610743840
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 6
+  magres: 20
+  nutrition: 300
+  res: 0
+  size: 2
+  sound: 20
+  speed: 6
+  symbol: h
+  weight: 900
+dwarf lord:
+  align: 5
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: blue
+  confer: 0
+  flag1: 1610743840
+  flag2: 768
+  frequency: 2
+  gflags: 32
+  level: 4
+  magres: 10
+  nutrition: 300
+  res: 0
+  size: 2
+  sound: 20
+  speed: 6
+  symbol: h
+  weight: 900
+dwarf mummy:
+  align: -4
+  armor: 5
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 268633088
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 5
+  magres: 20
+  nutrition: 150
+  res: 38
+  size: 2
+  sound: 0
+  speed: 10
+  symbol: M
+  weight: 900
+dwarf zombie:
+  align: -3
+  armor: 9
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 268633088
+  flag2: 256
+  frequency: 1
+  gflags: 176
+  level: 2
+  magres: 0
+  nutrition: 150
+  res: 38
+  size: 2
+  sound: 0
+  speed: 6
+  symbol: Z
+  weight: 900
+earth elemental:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 4
+    sides: 6
+  color: brown
+  confer: 0
+  flag1: 2225160
+  flag2: 0
+  frequency: 1
+  gflags: 16
+  level: 8
+  magres: 30
+  nutrition: 0
+  res: 163
+  size: 4
+  sound: 0
+  speed: 6
+  symbol: E
+  weight: 2500
+electric eel:
+  align: 0
+  armor: -3
+  attacks:
+  - attacktype: 2
+    damagetype: 6
+    number: 4
+    sides: 6
+  - attacktype: 5
+    damagetype: 28
+    number: 0
+    sides: 0
+  color: bright blue
+  confer: 16
+  flag1: 541878786
+  flag2: 512
+  frequency: 0
+  gflags: 544
+  level: 7
+  magres: 0
+  nutrition: 250
+  res: 16
+  size: 4
+  sound: 0
+  speed: 10
+  symbol: ;
+  weight: 200
+elf:
+  align: -3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: white
+  confer: 4
+  flag1: 1627521024
+  flag2: 768
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 2
+  nutrition: 350
+  res: 4
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 800
+elf mummy:
+  align: -5
+  armor: 4
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: green
+  confer: 0
+  flag1: 268633088
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 6
+  magres: 30
+  nutrition: 175
+  res: 38
+  size: 2
+  sound: 0
+  speed: 12
+  symbol: M
+  weight: 800
+elf zombie:
+  align: -3
+  armor: 9
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 7
+  color: green
+  confer: 0
+  flag1: 197632
+  flag2: 256
+  frequency: 1
+  gflags: 176
+  level: 3
+  magres: 0
+  nutrition: 175
+  res: 38
+  size: 2
+  sound: 0
+  speed: 6
+  symbol: Z
+  weight: 800
+elf-lord:
+  align: -9
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: bright blue
+  confer: 4
+  flag1: 1627521024
+  flag2: 768
+  frequency: 2
+  gflags: 160
+  level: 8
+  magres: 20
+  nutrition: 350
+  res: 4
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 800
+energy vortex:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 11
+    damagetype: 6
+    number: 1
+    sides: 6
+  - attacktype: 11
+    damagetype: 16
+    number: 0
+    sides: 0
+  - attacktype: 0
+    damagetype: 6
+    number: 0
+    sides: 4
+  color: bright blue
+  confer: 0
+  flag1: 1176577
+  flag2: 0
+  frequency: 1
+  gflags: 48
+  level: 6
+  magres: 30
+  nutrition: 0
+  res: 188
+  size: 4
+  sound: 0
+  speed: 20
+  symbol: v
+  weight: 0
+erinys:
+  align: 10
+  armor: 2
+  attacks:
+  - attacktype: 254
+    damagetype: 7
+    number: 2
+    sides: 4
+  color: red
+  confer: 0
+  flag1: 268566528
+  flag2: 768
+  frequency: 2
+  gflags: 1168
+  level: 7
+  magres: 30
+  nutrition: 400
+  res: 33
+  size: 2
+  sound: 0
+  speed: 12
+  symbol: '&'
+  weight: 1450
+ettin:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 254
+    damagetype: 0
+    number: 3
+    sides: 6
+  color: brown
+  confer: 0
+  flag1: 537264128
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 10
+  magres: 0
+  nutrition: 500
+  res: 0
+  size: 4
+  sound: 9
+  speed: 12
+  symbol: H
+  weight: 1700
+ettin mummy:
+  align: -6
+  armor: 4
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: blue
+  confer: 0
+  flag1: 268633088
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 7
+  magres: 30
+  nutrition: 250
+  res: 38
+  size: 4
+  sound: 0
+  speed: 12
+  symbol: M
+  weight: 1700
+ettin zombie:
+  align: -4
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 10
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 10
+  color: blue
+  confer: 0
+  flag1: 197632
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 6
+  magres: 0
+  nutrition: 250
+  res: 38
+  size: 4
+  sound: 0
+  speed: 8
+  symbol: Z
+  weight: 1700
+fire ant:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 2
+    damagetype: 2
+    number: 2
+    sides: 4
+  color: red
+  confer: 1
+  flag1: 541335552
+  flag2: 512
+  frequency: 1
+  gflags: 160
+  level: 3
+  magres: 10
+  nutrition: 10
+  res: 1
+  size: 0
+  sound: 0
+  speed: 18
+  symbol: a
+  weight: 30
+fire elemental:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 1
+    damagetype: 2
+    number: 3
+    sides: 6
+  - attacktype: 0
+    damagetype: 2
+    number: 0
+    sides: 4
+  color: yellow
+  confer: 0
+  flag1: 1177601
+  flag2: 512
+  frequency: 1
+  gflags: 16
+  level: 8
+  magres: 30
+  nutrition: 0
+  res: 161
+  size: 4
+  sound: 0
+  speed: 12
+  symbol: E
+  weight: 0
+fire giant:
+  align: 2
+  armor: 4
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 10
+  color: yellow
+  confer: 1
+  flag1: 537001984
+  flag2: 768
+  frequency: 1
+  gflags: 160
+  level: 9
+  magres: 5
+  nutrition: 750
+  res: 1
+  size: 4
+  sound: 39
+  speed: 12
+  symbol: H
+  weight: 2250
+fire vortex:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 11
+    damagetype: 2
+    number: 1
+    sides: 10
+  - attacktype: 0
+    damagetype: 2
+    number: 0
+    sides: 4
+  color: yellow
+  confer: 0
+  flag1: 1176577
+  flag2: 512
+  frequency: 1
+  gflags: 1072
+  level: 8
+  magres: 30
+  nutrition: 0
+  res: 165
+  size: 4
+  sound: 0
+  speed: 22
+  symbol: v
+  weight: 0
+flaming sphere:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 13
+    damagetype: 2
+    number: 4
+    sides: 6
+  color: red
+  confer: 1
+  flag1: 123905
+  flag2: 512
+  frequency: 2
+  gflags: 48
+  level: 6
+  magres: 0
+  nutrition: 10
+  res: 1
+  size: 1
+  sound: 0
+  speed: 13
+  symbol: e
+  weight: 10
+flesh golem:
+  align: 0
+  armor: 9
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 8
+  color: red
+  confer: 55
+  flag1: 197632
+  flag2: 0
+  frequency: 1
+  gflags: 0
+  level: 9
+  magres: 30
+  nutrition: 600
+  res: 55
+  size: 3
+  sound: 0
+  speed: 8
+  symbol: ''''
+  weight: 1400
+floating eye:
+  align: 0
+  armor: 9
+  attacks:
+  - attacktype: 0
+    damagetype: 14
+    number: 0
+    sides: 70
+  color: blue
+  confer: 0
+  flag1: 59905
+  flag2: 512
+  frequency: 5
+  gflags: 32
+  level: 2
+  magres: 10
+  nutrition: 10
+  res: 0
+  size: 1
+  sound: 0
+  speed: 1
+  symbol: e
+  weight: 10
+fog cloud:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 11
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: gray
+  confer: 0
+  flag1: 1176581
+  flag2: 0
+  frequency: 2
+  gflags: 48
+  level: 3
+  magres: 0
+  nutrition: 0
+  res: 164
+  size: 4
+  sound: 0
+  speed: 1
+  symbol: v
+  weight: 0
+forest centaur:
+  align: -1
+  armor: 3
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: green
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 5
+  magres: 10
+  nutrition: 600
+  res: 0
+  size: 3
+  sound: 20
+  speed: 18
+  symbol: C
+  weight: 2550
+fox:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 3
+  color: red
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 0
+  magres: 0
+  nutrition: 250
+  res: 0
+  size: 1
+  sound: 1
+  speed: 15
+  symbol: d
+  weight: 300
+freezing sphere:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 13
+    damagetype: 3
+    number: 4
+    sides: 6
+  color: white
+  confer: 2
+  flag1: 125953
+  flag2: 512
+  frequency: 2
+  gflags: 2096
+  level: 6
+  magres: 0
+  nutrition: 10
+  res: 2
+  size: 1
+  sound: 0
+  speed: 13
+  symbol: e
+  weight: 10
+frost giant:
+  align: -3
+  armor: 3
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 12
+  color: white
+  confer: 2
+  flag1: 537001984
+  flag2: 768
+  frequency: 1
+  gflags: 2208
+  level: 10
+  magres: 10
+  nutrition: 750
+  res: 2
+  size: 4
+  sound: 39
+  speed: 12
+  symbol: H
+  weight: 2250
+gargoyle:
+  align: -9
+  armor: -4
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: brown
+  confer: 128
+  flag1: 2229248
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 6
+  magres: 0
+  nutrition: 200
+  res: 128
+  size: 2
+  sound: 9
+  speed: 10
+  symbol: g
+  weight: 1000
+garter snake:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 2
+  color: green
+  confer: 0
+  flag1: 541878402
+  flag2: 0
+  frequency: 1
+  gflags: 96
+  level: 1
+  magres: 0
+  nutrition: 60
+  res: 0
+  size: 0
+  sound: 7
+  speed: 8
+  symbol: S
+  weight: 50
+gas spore:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 14
+    damagetype: 0
+    number: 4
+    sides: 6
+  color: gray
+  confer: 0
+  flag1: 123905
+  flag2: 0
+  frequency: 1
+  gflags: 48
+  level: 1
+  magres: 0
+  nutrition: 10
+  res: 0
+  size: 1
+  sound: 0
+  speed: 3
+  symbol: e
+  weight: 10
+gecko:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 3
+  color: green
+  confer: 0
+  flag1: 537141248
+  flag2: 0
+  frequency: 5
+  gflags: 32
+  level: 1
+  magres: 0
+  nutrition: 20
+  res: 0
+  size: 0
+  sound: 5
+  speed: 6
+  symbol: ':'
+  weight: 10
+gelatinous cube:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 5
+    damagetype: 14
+    number: 2
+    sides: 4
+  - attacktype: 0
+    damagetype: 14
+    number: 1
+    sides: 4
+  color: cyan
+  confer: 23
+  flag1: 1744957440
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 6
+  magres: 0
+  nutrition: 150
+  res: 247
+  size: 3
+  sound: 0
+  speed: 6
+  symbol: b
+  weight: 600
+ghost:
+  align: -5
+  armor: -5
+  attacks:
+  - attacktype: 5
+    damagetype: 0
+    number: 1
+    sides: 1
+  color: gray
+  confer: 0
+  flag1: 1180681
+  flag2: 256
+  frequency: 0
+  gflags: 528
+  level: 10
+  magres: 50
+  nutrition: 0
+  res: 174
+  size: 2
+  sound: 0
+  speed: 3
+  symbol: ' '
+  weight: 1450
+ghoul:
+  align: -2
+  armor: 10
+  attacks:
+  - attacktype: 1
+    damagetype: 14
+    number: 1
+    sides: 2
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  color: black
+  confer: 0
+  flag1: 268633088
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 3
+  magres: 0
+  nutrition: 50
+  res: 38
+  size: 1
+  sound: 0
+  speed: 6
+  symbol: Z
+  weight: 400
+giant:
+  align: 2
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 10
+  color: red
+  confer: 0
+  flag1: 537001984
+  flag2: 768
+  frequency: 1
+  gflags: 544
+  level: 6
+  magres: 0
+  nutrition: 750
+  res: 0
+  size: 4
+  sound: 39
+  speed: 6
+  symbol: H
+  weight: 2250
+giant ant:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 541335552
+  flag2: 0
+  frequency: 3
+  gflags: 160
+  level: 2
+  magres: 0
+  nutrition: 10
+  res: 0
+  size: 0
+  sound: 0
+  speed: 18
+  symbol: a
+  weight: 10
+giant bat:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 537141249
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 2
+  magres: 0
+  nutrition: 30
+  res: 0
+  size: 1
+  sound: 5
+  speed: 22
+  symbol: B
+  weight: 30
+giant beetle:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 6
+  color: black
+  confer: 32
+  flag1: 805576704
+  flag2: 0
+  frequency: 3
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 10
+  res: 32
+  size: 3
+  sound: 0
+  speed: 6
+  symbol: a
+  weight: 10
+giant eel:
+  align: 0
+  armor: -1
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 6
+  - attacktype: 5
+    damagetype: 28
+    number: 0
+    sides: 0
+  color: cyan
+  confer: 0
+  flag1: 541878786
+  flag2: 512
+  frequency: 0
+  gflags: 544
+  level: 5
+  magres: 0
+  nutrition: 250
+  res: 0
+  size: 4
+  sound: 0
+  speed: 9
+  symbol: ;
+  weight: 200
+giant mimic:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 1
+    damagetype: 19
+    number: 3
+    sides: 6
+  - attacktype: 1
+    damagetype: 19
+    number: 3
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 539292948
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 9
+  magres: 20
+  nutrition: 500
+  res: 64
+  size: 3
+  sound: 0
+  speed: 3
+  symbol: m
+  weight: 800
+giant mummy:
+  align: -7
+  armor: 3
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 4
+  color: cyan
+  confer: 0
+  flag1: 268633088
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 8
+  magres: 30
+  nutrition: 375
+  res: 38
+  size: 4
+  sound: 0
+  speed: 14
+  symbol: M
+  weight: 2050
+giant rat:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 3
+  color: brown
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 2
+  gflags: 160
+  level: 1
+  magres: 0
+  nutrition: 30
+  res: 0
+  size: 0
+  sound: 5
+  speed: 10
+  symbol: r
+  weight: 30
+giant spider:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 2
+    damagetype: 7
+    number: 2
+    sides: 4
+  color: magenta
+  confer: 32
+  flag1: 809771008
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 100
+  res: 32
+  size: 3
+  sound: 0
+  speed: 15
+  symbol: s
+  weight: 100
+giant zombie:
+  align: -4
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 8
+  color: cyan
+  confer: 0
+  flag1: 197632
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 8
+  magres: 0
+  nutrition: 375
+  res: 38
+  size: 4
+  sound: 0
+  speed: 8
+  symbol: Z
+  weight: 2050
+glass golem:
+  align: 0
+  armor: 1
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 8
+  color: cyan
+  confer: 0
+  flag1: 2294784
+  flag2: 0
+  frequency: 1
+  gflags: 16
+  level: 16
+  magres: 50
+  nutrition: 0
+  res: 100
+  size: 3
+  sound: 0
+  speed: 6
+  symbol: ''''
+  weight: 1800
+glass piercer:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 4
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 537164048
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 7
+  magres: 0
+  nutrition: 300
+  res: 64
+  size: 2
+  sound: 0
+  speed: 1
+  symbol: p
+  weight: 400
+gnome:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: brown
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 1
+  gflags: 160
+  level: 1
+  magres: 4
+  nutrition: 100
+  res: 0
+  size: 1
+  sound: 9
+  speed: 6
+  symbol: G
+  weight: 650
+gnome king:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: magenta
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 5
+  magres: 20
+  nutrition: 150
+  res: 0
+  size: 1
+  sound: 9
+  speed: 10
+  symbol: G
+  weight: 750
+gnome lord:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: blue
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 2
+  gflags: 32
+  level: 3
+  magres: 4
+  nutrition: 120
+  res: 0
+  size: 1
+  sound: 9
+  speed: 8
+  symbol: G
+  weight: 700
+gnome mummy:
+  align: -3
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 268633088
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 4
+  magres: 20
+  nutrition: 50
+  res: 38
+  size: 1
+  sound: 0
+  speed: 10
+  symbol: M
+  weight: 650
+gnome zombie:
+  align: -2
+  armor: 10
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 5
+  color: brown
+  confer: 0
+  flag1: 268633088
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 1
+  magres: 0
+  nutrition: 50
+  res: 38
+  size: 1
+  sound: 0
+  speed: 6
+  symbol: Z
+  weight: 650
+gnomish wizard:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  color: bright blue
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 3
+  magres: 10
+  nutrition: 120
+  res: 0
+  size: 1
+  sound: 9
+  speed: 10
+  symbol: G
+  weight: 700
+goblin:
+  align: -3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: gray
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 2
+  gflags: 32
+  level: 0
+  magres: 0
+  nutrition: 100
+  res: 0
+  size: 1
+  sound: 9
+  speed: 6
+  symbol: o
+  weight: 400
+gold golem:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 3
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 3
+  color: yellow
+  confer: 0
+  flag1: 2294784
+  flag2: 0
+  frequency: 1
+  gflags: 16
+  level: 5
+  magres: 0
+  nutrition: 0
+  res: 100
+  size: 3
+  sound: 0
+  speed: 9
+  symbol: ''''
+  weight: 450
+golden naga:
+  align: 5
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 255
+    damagetype: 241
+    number: 4
+    sides: 6
+  color: yellow
+  confer: 32
+  flag1: 1617455104
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 10
+  magres: 70
+  nutrition: 400
+  res: 32
+  size: 4
+  sound: 18
+  speed: 14
+  symbol: N
+  weight: 2600
+golden naga hatchling:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: yellow
+  confer: 32
+  flag1: 1613260800
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 3
+  magres: 0
+  nutrition: 100
+  res: 32
+  size: 3
+  sound: 18
+  speed: 10
+  symbol: N
+  weight: 500
+gray dragon:
+  align: 4
+  armor: -1
+  attacks:
+  - attacktype: 12
+    damagetype: 1
+    number: 4
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: gray
+  confer: 0
+  flag1: 559947777
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 15
+  magres: 20
+  nutrition: 1500
+  res: 0
+  size: 7
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 4500
+gray ooze:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 2
+    damagetype: 24
+    number: 2
+    sides: 8
+  color: gray
+  confer: 35
+  flag1: 1744958468
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 3
+  magres: 0
+  nutrition: 250
+  res: 227
+  size: 2
+  sound: 0
+  speed: 1
+  symbol: P
+  weight: 500
+gray unicorn:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 4
+    damagetype: 0
+    number: 1
+    sides: 12
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: gray
+  confer: 32
+  flag1: 1073750016
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 4
+  magres: 70
+  nutrition: 300
+  res: 32
+  size: 3
+  sound: 10
+  speed: 24
+  symbol: u
+  weight: 1300
+green dragon:
+  align: 6
+  armor: -1
+  attacks:
+  - attacktype: 12
+    damagetype: 7
+    number: 4
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: green
+  confer: 32
+  flag1: 828383233
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 15
+  magres: 20
+  nutrition: 1500
+  res: 32
+  size: 7
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 4500
+green mold:
+  align: 0
+  armor: 9
+  attacks:
+  - attacktype: 0
+    damagetype: 8
+    number: 0
+    sides: 4
+  color: green
+  confer: 128
+  flag1: 134347776
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 1
+  magres: 0
+  nutrition: 30
+  res: 192
+  size: 1
+  sound: 0
+  speed: 0
+  symbol: F
+  weight: 50
+green slime:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 5
+    damagetype: 40
+    number: 1
+    sides: 4
+  - attacktype: 0
+    damagetype: 40
+    number: 0
+    sides: 0
+  color: green
+  confer: 0
+  flag1: 2013393924
+  flag2: 0
+  frequency: 1
+  gflags: 1056
+  level: 6
+  magres: 0
+  nutrition: 150
+  res: 242
+  size: 3
+  sound: 0
+  speed: 6
+  symbol: P
+  weight: 400
+gremlin:
+  align: -9
+  armor: 2
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 253
+    number: 0
+    sides: 0
+  color: green
+  confer: 32
+  flag1: 268566530
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 5
+  magres: 25
+  nutrition: 20
+  res: 32
+  size: 1
+  sound: 17
+  speed: 12
+  symbol: g
+  weight: 100
+grid bug:
+  align: 0
+  armor: 9
+  attacks:
+  - attacktype: 2
+    damagetype: 6
+    number: 1
+    sides: 1
+  color: magenta
+  confer: 0
+  flag1: 262144
+  flag2: 512
+  frequency: 3
+  gflags: 176
+  level: 0
+  magres: 0
+  nutrition: 10
+  res: 48
+  size: 0
+  sound: 8
+  speed: 12
+  symbol: x
+  weight: 15
+guard:
+  align: 10
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 10
+  color: blue
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 12
+  magres: 40
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 23
+  speed: 12
+  symbol: '@'
+  weight: 1450
+guardian naga:
+  align: 7
+  armor: 0
+  attacks:
+  - attacktype: 2
+    damagetype: 14
+    number: 1
+    sides: 6
+  - attacktype: 10
+    damagetype: 7
+    number: 1
+    sides: 6
+  - attacktype: 7
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: green
+  confer: 32
+  flag1: 1885890560
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 12
+  magres: 50
+  nutrition: 400
+  res: 32
+  size: 4
+  sound: 18
+  speed: 16
+  symbol: N
+  weight: 2600
+guardian naga hatchling:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: green
+  confer: 32
+  flag1: 1613260800
+  flag2: 0
+  frequency: 0
+  gflags: 32
+  level: 3
+  magres: 0
+  nutrition: 100
+  res: 32
+  size: 3
+  sound: 18
+  speed: 10
+  symbol: N
+  weight: 500
+healer:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 1
+  nutrition: 400
+  res: 32
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+hell hound:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 6
+  - attacktype: 12
+    damagetype: 2
+    number: 3
+    sides: 6
+  color: red
+  confer: 1
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 1056
+  level: 12
+  magres: 20
+  nutrition: 300
+  res: 1
+  size: 2
+  sound: 1
+  speed: 14
+  symbol: d
+  weight: 600
+hell hound pup:
+  align: -5
+  armor: 4
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 12
+    damagetype: 2
+    number: 2
+    sides: 6
+  color: red
+  confer: 1
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 1184
+  level: 7
+  magres: 20
+  nutrition: 200
+  res: 1
+  size: 1
+  sound: 1
+  speed: 12
+  symbol: d
+  weight: 200
+hezrou:
+  align: -10
+  armor: -2
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 2
+    damagetype: 0
+    number: 4
+    sides: 4
+  color: red
+  confer: 0
+  flag1: 268566528
+  flag2: 768
+  frequency: 2
+  gflags: 1168
+  level: 9
+  magres: 55
+  nutrition: 400
+  res: 33
+  size: 3
+  sound: 0
+  speed: 6
+  symbol: '&'
+  weight: 1450
+high priest:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 10
+  - attacktype: 3
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 255
+    damagetype: 240
+    number: 2
+    sides: 8
+  - attacktype: 255
+    damagetype: 240
+    number: 2
+    sides: 8
+  color: white
+  confer: 0
+  flag1: 1627521024
+  flag2: 512
+  frequency: 0
+  gflags: 4608
+  level: 25
+  magres: 70
+  nutrition: 400
+  res: 53
+  size: 2
+  sound: 36
+  speed: 15
+  symbol: '@'
+  weight: 1450
+hill giant:
+  align: -2
+  armor: 6
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 8
+  color: cyan
+  confer: 0
+  flag1: 537001984
+  flag2: 768
+  frequency: 1
+  gflags: 160
+  level: 8
+  magres: 0
+  nutrition: 700
+  res: 0
+  size: 4
+  sound: 39
+  speed: 10
+  symbol: H
+  weight: 2200
+hill orc:
+  align: -4
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: yellow
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 2
+  gflags: 96
+  level: 2
+  magres: 0
+  nutrition: 200
+  res: 0
+  size: 2
+  sound: 9
+  speed: 9
+  symbol: o
+  weight: 1000
+hobbit:
+  align: 6
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: green
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 2
+  gflags: 32
+  level: 1
+  magres: 0
+  nutrition: 200
+  res: 0
+  size: 1
+  sound: 20
+  speed: 9
+  symbol: h
+  weight: 500
+hobgoblin:
+  align: -4
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: brown
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 2
+  gflags: 32
+  level: 1
+  magres: 0
+  nutrition: 200
+  res: 0
+  size: 2
+  sound: 9
+  speed: 9
+  symbol: o
+  weight: 1000
+homunculus:
+  align: -7
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 4
+    number: 1
+    sides: 3
+  color: green
+  confer: 36
+  flag1: 268435457
+  flag2: 768
+  frequency: 2
+  gflags: 32
+  level: 2
+  magres: 10
+  nutrition: 100
+  res: 36
+  size: 0
+  sound: 0
+  speed: 12
+  symbol: i
+  weight: 60
+horned devil:
+  align: 11
+  armor: -5
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 3
+  - attacktype: 6
+    damagetype: 0
+    number: 1
+    sides: 3
+  color: brown
+  confer: 0
+  flag1: 270532608
+  flag2: 768
+  frequency: 2
+  gflags: 1040
+  level: 6
+  magres: 50
+  nutrition: 400
+  res: 33
+  size: 2
+  sound: 0
+  speed: 9
+  symbol: '&'
+  weight: 1450
+horse:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 3
+  color: brown
+  confer: 0
+  flag1: 1074012160
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 300
+  res: 0
+  size: 3
+  sound: 10
+  speed: 20
+  symbol: u
+  weight: 1500
+housecat:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 4
+  magres: 0
+  nutrition: 200
+  res: 0
+  size: 1
+  sound: 2
+  speed: 16
+  symbol: f
+  weight: 200
+human:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 0
+  magres: 0
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+human mummy:
+  align: -5
+  armor: 4
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: gray
+  confer: 0
+  flag1: 268633088
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 6
+  magres: 30
+  nutrition: 200
+  res: 38
+  size: 2
+  sound: 0
+  speed: 12
+  symbol: M
+  weight: 1450
+human zombie:
+  align: -3
+  armor: 8
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: white
+  confer: 0
+  flag1: 197632
+  flag2: 256
+  frequency: 1
+  gflags: 176
+  level: 4
+  magres: 0
+  nutrition: 200
+  res: 38
+  size: 2
+  sound: 0
+  speed: 6
+  symbol: Z
+  weight: 1450
+hunter:
+  align: -7
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: white
+  confer: 0
+  flag1: 1627521024
+  flag2: 768
+  frequency: 0
+  gflags: 512
+  level: 5
+  magres: 10
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 33
+  speed: 12
+  symbol: '@'
+  weight: 1450
+ice devil:
+  align: -12
+  armor: -4
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 6
+    damagetype: 3
+    number: 3
+    sides: 4
+  color: white
+  confer: 0
+  flag1: 285212672
+  flag2: 768
+  frequency: 2
+  gflags: 1040
+  level: 11
+  magres: 55
+  nutrition: 400
+  res: 35
+  size: 3
+  sound: 0
+  speed: 6
+  symbol: '&'
+  weight: 1450
+ice troll:
+  align: -3
+  armor: 2
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 1
+    damagetype: 3
+    number: 2
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: white
+  confer: 2
+  flag1: 545390592
+  flag2: 768
+  frequency: 1
+  gflags: 2080
+  level: 9
+  magres: 20
+  nutrition: 300
+  res: 2
+  size: 3
+  sound: 9
+  speed: 10
+  symbol: T
+  weight: 1000
+ice vortex:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 11
+    damagetype: 3
+    number: 1
+    sides: 6
+  color: cyan
+  confer: 0
+  flag1: 128001
+  flag2: 512
+  frequency: 1
+  gflags: 2096
+  level: 5
+  magres: 30
+  nutrition: 0
+  res: 166
+  size: 4
+  sound: 0
+  speed: 20
+  symbol: v
+  weight: 0
+iguana:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 537141248
+  flag2: 0
+  frequency: 5
+  gflags: 32
+  level: 2
+  magres: 0
+  nutrition: 30
+  res: 0
+  size: 0
+  sound: 0
+  speed: 6
+  symbol: ':'
+  weight: 30
+imp:
+  align: -7
+  armor: 2
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: red
+  confer: 0
+  flag1: 8388608
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 3
+  magres: 20
+  nutrition: 10
+  res: 0
+  size: 0
+  sound: 29
+  speed: 12
+  symbol: i
+  weight: 20
+incubus:
+  align: -9
+  armor: 0
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 2
+    damagetype: 15
+    number: 2
+    sides: 6
+  color: gray
+  confer: 0
+  flag1: 268566529
+  flag2: 768
+  frequency: 1
+  gflags: 16
+  level: 6
+  magres: 70
+  nutrition: 400
+  res: 33
+  size: 2
+  sound: 26
+  speed: 12
+  symbol: '&'
+  weight: 1450
+iron golem:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 10
+  - attacktype: 12
+    damagetype: 7
+    number: 4
+    sides: 6
+  color: cyan
+  confer: 0
+  flag1: 270730240
+  flag2: 0
+  frequency: 1
+  gflags: 16
+  level: 18
+  magres: 60
+  nutrition: 0
+  res: 55
+  size: 3
+  sound: 0
+  speed: 6
+  symbol: ''''
+  weight: 2000
+iron piercer:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 6
+  color: cyan
+  confer: 0
+  flag1: 537164048
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 300
+  res: 0
+  size: 2
+  sound: 0
+  speed: 1
+  symbol: p
+  weight: 400
+jabberwock:
+  align: 0
+  armor: -2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 10
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 10
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 10
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 10
+  color: orange
+  confer: 0
+  flag1: 537133057
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 15
+  magres: 50
+  nutrition: 600
+  res: 0
+  size: 3
+  sound: 13
+  speed: 12
+  symbol: J
+  weight: 1300
+jackal:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 2
+  color: brown
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 3
+  gflags: 160
+  level: 0
+  magres: 0
+  nutrition: 250
+  res: 0
+  size: 1
+  sound: 1
+  speed: 12
+  symbol: d
+  weight: 300
+jaguar:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: brown
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 4
+  magres: 0
+  nutrition: 300
+  res: 0
+  size: 3
+  sound: 4
+  speed: 15
+  symbol: f
+  weight: 600
+jellyfish:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 6
+    damagetype: 7
+    number: 3
+    sides: 3
+  color: blue
+  confer: 32
+  flag1: 268986882
+  flag2: 0
+  frequency: 0
+  gflags: 544
+  level: 3
+  magres: 0
+  nutrition: 20
+  res: 32
+  size: 1
+  sound: 0
+  speed: 3
+  symbol: ;
+  weight: 80
+ki-rin:
+  align: 15
+  armor: -5
+  attacks:
+  - attacktype: 3
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 3
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 4
+    damagetype: 0
+    number: 3
+    sides: 6
+  - attacktype: 255
+    damagetype: 241
+    number: 2
+    sides: 6
+  color: yellow
+  confer: 0
+  flag1: 16777217
+  flag2: 768
+  frequency: 1
+  gflags: 2064
+  level: 16
+  magres: 90
+  nutrition: 400
+  res: 0
+  size: 3
+  sound: 10
+  speed: 18
+  symbol: A
+  weight: 1450
+killer bee:
+  align: 0
+  armor: -1
+  attacks:
+  - attacktype: 6
+    damagetype: 7
+    number: 1
+    sides: 3
+  color: yellow
+  confer: 32
+  flag1: 268705793
+  flag2: 0
+  frequency: 2
+  gflags: 96
+  level: 1
+  magres: 0
+  nutrition: 5
+  res: 32
+  size: 0
+  sound: 8
+  speed: 18
+  symbol: a
+  weight: 1
+kitten:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 2
+  magres: 0
+  nutrition: 150
+  res: 0
+  size: 1
+  sound: 2
+  speed: 18
+  symbol: f
+  weight: 150
+knight:
+  align: 3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 1
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+kobold:
+  align: -2
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 1879179264
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 0
+  magres: 0
+  nutrition: 100
+  res: 32
+  size: 1
+  sound: 9
+  speed: 6
+  symbol: k
+  weight: 400
+kobold lord:
+  align: -4
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: magenta
+  confer: 0
+  flag1: 1879179264
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 2
+  magres: 0
+  nutrition: 200
+  res: 32
+  size: 1
+  sound: 9
+  speed: 6
+  symbol: k
+  weight: 500
+kobold mummy:
+  align: -2
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 268633088
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 3
+  magres: 20
+  nutrition: 50
+  res: 38
+  size: 1
+  sound: 0
+  speed: 8
+  symbol: M
+  weight: 400
+kobold shaman:
+  align: -4
+  armor: 6
+  attacks:
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  color: bright blue
+  confer: 0
+  flag1: 1879179264
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 2
+  magres: 10
+  nutrition: 150
+  res: 32
+  size: 1
+  sound: 9
+  speed: 6
+  symbol: k
+  weight: 450
+kobold zombie:
+  align: -2
+  armor: 10
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 268633088
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 0
+  magres: 0
+  nutrition: 50
+  res: 38
+  size: 1
+  sound: 0
+  speed: 6
+  symbol: Z
+  weight: 400
+kraken:
+  align: -3
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 7
+    damagetype: 28
+    number: 2
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 5
+    sides: 4
+  color: red
+  confer: 0
+  flag1: 537141762
+  flag2: 512
+  frequency: 0
+  gflags: 544
+  level: 20
+  magres: 0
+  nutrition: 1000
+  res: 0
+  size: 4
+  sound: 0
+  speed: 3
+  symbol: ;
+  weight: 1800
+large cat:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: white
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 6
+  magres: 0
+  nutrition: 250
+  res: 0
+  size: 1
+  sound: 2
+  speed: 15
+  symbol: f
+  weight: 250
+large dog:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: white
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 6
+  magres: 0
+  nutrition: 250
+  res: 0
+  size: 2
+  sound: 1
+  speed: 15
+  symbol: d
+  weight: 800
+large kobold:
+  align: -3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 1879179264
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 1
+  magres: 0
+  nutrition: 150
+  res: 32
+  size: 1
+  sound: 9
+  speed: 6
+  symbol: k
+  weight: 450
+large mimic:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 1
+    damagetype: 19
+    number: 3
+    sides: 4
+  color: red
+  confer: 0
+  flag1: 539292948
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 8
+  magres: 10
+  nutrition: 400
+  res: 64
+  size: 3
+  sound: 0
+  speed: 3
+  symbol: m
+  weight: 600
+leather golem:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: brown
+  confer: 0
+  flag1: 197632
+  flag2: 0
+  frequency: 1
+  gflags: 16
+  level: 6
+  magres: 0
+  nutrition: 0
+  res: 36
+  size: 3
+  sound: 0
+  speed: 6
+  symbol: ''''
+  weight: 800
+lemure:
+  align: -7
+  armor: 7
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  color: brown
+  confer: 4
+  flag1: 276824064
+  flag2: 768
+  frequency: 1
+  gflags: 1136
+  level: 3
+  magres: 0
+  nutrition: 100
+  res: 36
+  size: 2
+  sound: 0
+  speed: 3
+  symbol: i
+  weight: 150
+leocrotta:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 1610883072
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 6
+  magres: 10
+  nutrition: 500
+  res: 0
+  size: 3
+  sound: 19
+  speed: 18
+  symbol: q
+  weight: 1200
+leprechaun:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 1
+    damagetype: 20
+    number: 1
+    sides: 2
+  color: green
+  confer: 0
+  flag1: 33685504
+  flag2: 512
+  frequency: 4
+  gflags: 32
+  level: 5
+  magres: 20
+  nutrition: 30
+  res: 0
+  size: 0
+  sound: 17
+  speed: 15
+  symbol: l
+  weight: 60
+lich:
+  align: -9
+  armor: 0
+  attacks:
+  - attacktype: 5
+    damagetype: 3
+    number: 1
+    sides: 10
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  color: brown
+  confer: 2
+  flag1: 276956160
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 11
+  magres: 30
+  nutrition: 100
+  res: 38
+  size: 2
+  sound: 18
+  speed: 6
+  symbol: L
+  weight: 1200
+lichen:
+  align: 0
+  armor: 9
+  attacks:
+  - attacktype: 5
+    damagetype: 19
+    number: 0
+    sides: 0
+  color: bright green
+  confer: 0
+  flag1: 130048
+  flag2: 0
+  frequency: 4
+  gflags: 32
+  level: 0
+  magres: 0
+  nutrition: 200
+  res: 0
+  size: 1
+  sound: 0
+  speed: 1
+  symbol: F
+  weight: 20
+lieutenant:
+  align: -4
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 3
+    sides: 4
+  - attacktype: 254
+    damagetype: 0
+    number: 3
+    sides: 4
+  color: green
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 10
+  magres: 15
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 22
+  speed: 10
+  symbol: '@'
+  weight: 1450
+little dog:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 2
+  magres: 0
+  nutrition: 150
+  res: 0
+  size: 1
+  sound: 1
+  speed: 18
+  symbol: d
+  weight: 150
+lizard:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: green
+  confer: 128
+  flag1: 537141248
+  flag2: 0
+  frequency: 5
+  gflags: 32
+  level: 5
+  magres: 10
+  nutrition: 40
+  res: 128
+  size: 0
+  sound: 0
+  speed: 6
+  symbol: ':'
+  weight: 10
+long worm:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 541878272
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 8
+  magres: 10
+  nutrition: 500
+  res: 0
+  size: 7
+  sound: 0
+  speed: 3
+  symbol: w
+  weight: 1500
+long worm tail:
+  align: 0
+  armor: 0
+  attacks: []
+  color: brown
+  confer: 0
+  flag1: 0
+  flag2: 0
+  frequency: 0
+  gflags: 4624
+  level: 0
+  magres: 0
+  nutrition: 0
+  res: 0
+  size: 0
+  sound: 0
+  speed: 0
+  symbol: '~'
+  weight: 0
+lurker above:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 11
+    damagetype: 26
+    number: 1
+    sides: 8
+  color: gray
+  confer: 0
+  flag1: 537194753
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 10
+  magres: 0
+  nutrition: 350
+  res: 0
+  size: 4
+  sound: 0
+  speed: 3
+  symbol: t
+  weight: 800
+lynx:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 10
+  color: cyan
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 300
+  res: 0
+  size: 1
+  sound: 4
+  speed: 15
+  symbol: f
+  weight: 600
+manes:
+  align: -7
+  armor: 7
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: red
+  confer: 0
+  flag1: 268435456
+  flag2: 768
+  frequency: 1
+  gflags: 112
+  level: 1
+  magres: 0
+  nutrition: 100
+  res: 36
+  size: 1
+  sound: 0
+  speed: 3
+  symbol: i
+  weight: 100
+marilith:
+  align: -12
+  armor: -6
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: red
+  confer: 0
+  flag1: 285868032
+  flag2: 768
+  frequency: 1
+  gflags: 1040
+  level: 7
+  magres: 80
+  nutrition: 400
+  res: 33
+  size: 3
+  sound: 29
+  speed: 12
+  symbol: '&'
+  weight: 1450
+master lich:
+  align: -15
+  armor: -4
+  attacks:
+  - attacktype: 5
+    damagetype: 3
+    number: 3
+    sides: 6
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  color: magenta
+  confer: 3
+  flag1: 276956160
+  flag2: 260
+  frequency: 1
+  gflags: 1072
+  level: 17
+  magres: 90
+  nutrition: 100
+  res: 39
+  size: 2
+  sound: 18
+  speed: 9
+  symbol: L
+  weight: 1200
+master mind flayer:
+  align: -8
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 16
+    damagetype: 32
+    number: 2
+    sides: 1
+  - attacktype: 16
+    damagetype: 32
+    number: 2
+    sides: 1
+  - attacktype: 16
+    damagetype: 32
+    number: 2
+    sides: 1
+  - attacktype: 16
+    damagetype: 32
+    number: 2
+    sides: 1
+  - attacktype: 16
+    damagetype: 32
+    number: 2
+    sides: 1
+  color: magenta
+  confer: 0
+  flag1: 1627521025
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 13
+  magres: 90
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 7
+  speed: 12
+  symbol: h
+  weight: 1450
+mastodon:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 4
+    damagetype: 0
+    number: 4
+    sides: 8
+  - attacktype: 4
+    damagetype: 0
+    number: 4
+    sides: 8
+  color: black
+  confer: 0
+  flag1: 1076109312
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 20
+  magres: 0
+  nutrition: 800
+  res: 0
+  size: 3
+  sound: 0
+  speed: 12
+  symbol: q
+  weight: 3800
+mind flayer:
+  align: -8
+  armor: 5
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 16
+    damagetype: 32
+    number: 2
+    sides: 1
+  - attacktype: 16
+    damagetype: 32
+    number: 2
+    sides: 1
+  - attacktype: 16
+    damagetype: 32
+    number: 2
+    sides: 1
+  color: magenta
+  confer: 0
+  flag1: 1627521025
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 9
+  magres: 90
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 7
+  speed: 12
+  symbol: h
+  weight: 1450
+minotaur:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 10
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 10
+  - attacktype: 4
+    damagetype: 0
+    number: 2
+    sides: 8
+  color: brown
+  confer: 0
+  flag1: 537264128
+  flag2: 768
+  frequency: 0
+  gflags: 544
+  level: 15
+  magres: 0
+  nutrition: 700
+  res: 0
+  size: 3
+  sound: 0
+  speed: 15
+  symbol: H
+  weight: 1500
+monk:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: white
+  confer: 0
+  flag1: 1073872896
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 2
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+monkey:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 21
+    number: 0
+    sides: 0
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 3
+  color: gray
+  confer: 0
+  flag1: 537264128
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 2
+  magres: 0
+  nutrition: 50
+  res: 0
+  size: 1
+  sound: 4
+  speed: 12
+  symbol: Y
+  weight: 100
+mountain centaur:
+  align: -3
+  armor: 2
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 10
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: cyan
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 6
+  magres: 10
+  nutrition: 500
+  res: 0
+  size: 3
+  sound: 20
+  speed: 20
+  symbol: C
+  weight: 2550
+mountain nymph:
+  align: 0
+  armor: 9
+  attacks:
+  - attacktype: 1
+    damagetype: 21
+    number: 0
+    sides: 0
+  - attacktype: 1
+    damagetype: 22
+    number: 0
+    sides: 0
+  color: brown
+  confer: 0
+  flag1: 33685504
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 3
+  magres: 20
+  nutrition: 300
+  res: 0
+  size: 2
+  sound: 26
+  speed: 12
+  symbol: n
+  weight: 600
+mumak:
+  align: -2
+  armor: 0
+  attacks:
+  - attacktype: 4
+    damagetype: 0
+    number: 4
+    sides: 12
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: gray
+  confer: 0
+  flag1: 1076109312
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 500
+  res: 0
+  size: 3
+  sound: 3
+  speed: 9
+  symbol: q
+  weight: 2500
+nalfeshnee:
+  align: -11
+  armor: -1
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  color: red
+  confer: 0
+  flag1: 268566528
+  flag2: 768
+  frequency: 1
+  gflags: 1040
+  level: 11
+  magres: 65
+  nutrition: 400
+  res: 33
+  size: 3
+  sound: 37
+  speed: 9
+  symbol: '&'
+  weight: 1450
+neanderthal:
+  align: 1
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 5
+  magres: 10
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 33
+  speed: 12
+  symbol: '@'
+  weight: 1450
+newt:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 2
+  color: yellow
+  confer: 0
+  flag1: 537141762
+  flag2: 0
+  frequency: 5
+  gflags: 32
+  level: 0
+  magres: 0
+  nutrition: 20
+  res: 0
+  size: 0
+  sound: 0
+  speed: 6
+  symbol: ':'
+  weight: 10
+ninja:
+  align: 3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 5
+  magres: 10
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+nurse:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 1
+    damagetype: 27
+    number: 2
+    sides: 6
+  color: white
+  confer: 32
+  flag1: 1610743808
+  flag2: 512
+  frequency: 3
+  gflags: 32
+  level: 11
+  magres: 0
+  nutrition: 400
+  res: 32
+  size: 2
+  sound: 25
+  speed: 6
+  symbol: '@'
+  weight: 1450
+ochre jelly:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 11
+    damagetype: 8
+    number: 3
+    sides: 6
+  - attacktype: 0
+    damagetype: 8
+    number: 3
+    sides: 6
+  color: brown
+  confer: 0
+  flag1: 134347780
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 6
+  magres: 20
+  nutrition: 20
+  res: 192
+  size: 2
+  sound: 0
+  speed: 3
+  symbol: j
+  weight: 50
+ogre:
+  align: -3
+  armor: 5
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 5
+  color: brown
+  confer: 0
+  flag1: 537001984
+  flag2: 768
+  frequency: 1
+  gflags: 160
+  level: 5
+  magres: 0
+  nutrition: 500
+  res: 0
+  size: 3
+  sound: 9
+  speed: 10
+  symbol: O
+  weight: 1600
+ogre king:
+  align: -7
+  armor: 4
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 3
+    sides: 5
+  color: magenta
+  confer: 0
+  flag1: 537001984
+  flag2: 768
+  frequency: 2
+  gflags: 32
+  level: 9
+  magres: 60
+  nutrition: 750
+  res: 0
+  size: 3
+  sound: 9
+  speed: 14
+  symbol: O
+  weight: 1700
+ogre lord:
+  align: -5
+  armor: 3
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 537001984
+  flag2: 768
+  frequency: 2
+  gflags: 32
+  level: 7
+  magres: 30
+  nutrition: 700
+  res: 0
+  size: 3
+  sound: 9
+  speed: 12
+  symbol: O
+  weight: 1700
+orange dragon:
+  align: 5
+  armor: -1
+  attacks:
+  - attacktype: 12
+    damagetype: 4
+    number: 4
+    sides: 25
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: orange
+  confer: 4
+  flag1: 559947777
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 15
+  magres: 20
+  nutrition: 1500
+  res: 4
+  size: 7
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 4500
+orc:
+  align: -3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: red
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 0
+  gflags: 608
+  level: 1
+  magres: 0
+  nutrition: 150
+  res: 0
+  size: 2
+  sound: 9
+  speed: 9
+  symbol: o
+  weight: 850
+orc mummy:
+  align: -4
+  armor: 5
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: gray
+  confer: 0
+  flag1: 268633088
+  flag2: 256
+  frequency: 1
+  gflags: 48
+  level: 5
+  magres: 20
+  nutrition: 75
+  res: 38
+  size: 2
+  sound: 0
+  speed: 10
+  symbol: M
+  weight: 850
+orc shaman:
+  align: -5
+  armor: 5
+  attacks:
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  color: bright blue
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 3
+  magres: 10
+  nutrition: 300
+  res: 0
+  size: 2
+  sound: 9
+  speed: 9
+  symbol: o
+  weight: 1000
+orc zombie:
+  align: -3
+  armor: 9
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: gray
+  confer: 0
+  flag1: 268633088
+  flag2: 256
+  frequency: 1
+  gflags: 176
+  level: 2
+  magres: 0
+  nutrition: 75
+  res: 38
+  size: 2
+  sound: 0
+  speed: 6
+  symbol: Z
+  weight: 850
+orc-captain:
+  align: -5
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: magenta
+  confer: 0
+  flag1: 1610743808
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 350
+  res: 0
+  size: 2
+  sound: 9
+  speed: 5
+  symbol: o
+  weight: 1350
+owlbear:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 7
+    damagetype: 0
+    number: 2
+    sides: 8
+  color: brown
+  confer: 0
+  flag1: 537264128
+  flag2: 512
+  frequency: 3
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 700
+  res: 0
+  size: 3
+  sound: 3
+  speed: 12
+  symbol: Y
+  weight: 1700
+page:
+  align: 3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 5
+  magres: 10
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 33
+  speed: 12
+  symbol: '@'
+  weight: 1450
+panther:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 10
+  color: black
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 300
+  res: 0
+  size: 3
+  sound: 4
+  speed: 15
+  symbol: f
+  weight: 600
+paper golem:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  color: white
+  confer: 0
+  flag1: 197632
+  flag2: 0
+  frequency: 1
+  gflags: 16
+  level: 3
+  magres: 0
+  nutrition: 0
+  res: 36
+  size: 3
+  sound: 0
+  speed: 12
+  symbol: ''''
+  weight: 400
+piranha:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 541878786
+  flag2: 0
+  frequency: 0
+  gflags: 672
+  level: 5
+  magres: 0
+  nutrition: 30
+  res: 0
+  size: 1
+  sound: 0
+  speed: 12
+  symbol: ;
+  weight: 60
+pit fiend:
+  align: -13
+  armor: -3
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 2
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 2
+  - attacktype: 7
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: red
+  confer: 0
+  flag1: 285212672
+  flag2: 768
+  frequency: 2
+  gflags: 1040
+  level: 13
+  magres: 65
+  nutrition: 400
+  res: 33
+  size: 3
+  sound: 4
+  speed: 6
+  symbol: '&'
+  weight: 1450
+pit viper:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 7
+    number: 1
+    sides: 4
+  - attacktype: 2
+    damagetype: 7
+    number: 1
+    sides: 4
+  color: blue
+  confer: 32
+  flag1: 810313858
+  flag2: 256
+  frequency: 1
+  gflags: 32
+  level: 6
+  magres: 0
+  nutrition: 60
+  res: 32
+  size: 2
+  sound: 7
+  speed: 15
+  symbol: S
+  weight: 100
+plains centaur:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: brown
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 4
+  magres: 0
+  nutrition: 500
+  res: 0
+  size: 3
+  sound: 20
+  speed: 18
+  symbol: C
+  weight: 2500
+pony:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 2
+  color: brown
+  confer: 0
+  flag1: 1074012160
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 3
+  magres: 0
+  nutrition: 250
+  res: 0
+  size: 2
+  sound: 10
+  speed: 16
+  symbol: u
+  weight: 1300
+priest:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 2
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+priestess:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 2
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+prisoner:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 640
+  frequency: 0
+  gflags: 512
+  level: 12
+  magres: 0
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 24
+  speed: 12
+  symbol: '@'
+  weight: 1450
+purple worm:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 11
+    damagetype: 26
+    number: 1
+    sides: 10
+  color: magenta
+  confer: 0
+  flag1: 541876224
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 15
+  magres: 20
+  nutrition: 700
+  res: 0
+  size: 7
+  sound: 0
+  speed: 9
+  symbol: w
+  weight: 2700
+pyrolisk:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 15
+    damagetype: 2
+    number: 2
+    sides: 6
+  color: red
+  confer: 33
+  flag1: 1615077376
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 6
+  magres: 30
+  nutrition: 30
+  res: 33
+  size: 1
+  sound: 7
+  speed: 6
+  symbol: c
+  weight: 30
+python:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 5
+    damagetype: 0
+    number: 0
+    sides: 0
+  - attacktype: 7
+    damagetype: 28
+    number: 1
+    sides: 4
+  - attacktype: 7
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: magenta
+  confer: 0
+  flag1: 541878274
+  flag2: 256
+  frequency: 1
+  gflags: 32
+  level: 6
+  magres: 0
+  nutrition: 100
+  res: 0
+  size: 3
+  sound: 7
+  speed: 3
+  symbol: S
+  weight: 250
+quantum mechanic:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 1
+    damagetype: 23
+    number: 1
+    sides: 4
+  color: cyan
+  confer: 0
+  flag1: 1912733696
+  flag2: 512
+  frequency: 3
+  gflags: 32
+  level: 7
+  magres: 10
+  nutrition: 20
+  res: 32
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: Q
+  weight: 1450
+quasit:
+  align: -7
+  armor: 2
+  attacks:
+  - attacktype: 1
+    damagetype: 30
+    number: 1
+    sides: 2
+  - attacktype: 1
+    damagetype: 30
+    number: 1
+    sides: 2
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: blue
+  confer: 32
+  flag1: 8388608
+  flag2: 768
+  frequency: 2
+  gflags: 32
+  level: 3
+  magres: 20
+  nutrition: 200
+  res: 32
+  size: 1
+  sound: 0
+  speed: 15
+  symbol: i
+  weight: 200
+queen bee:
+  align: 0
+  armor: -4
+  attacks:
+  - attacktype: 6
+    damagetype: 7
+    number: 1
+    sides: 8
+  color: magenta
+  confer: 32
+  flag1: 272900097
+  flag2: 0
+  frequency: 0
+  gflags: 544
+  level: 9
+  magres: 0
+  nutrition: 5
+  res: 32
+  size: 0
+  sound: 8
+  speed: 24
+  symbol: a
+  weight: 1
+quivering blob:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 5
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: white
+  confer: 32
+  flag1: 126976
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 100
+  res: 36
+  size: 1
+  sound: 0
+  speed: 1
+  symbol: b
+  weight: 200
+rabid rat:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 31
+    number: 2
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 805576704
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 2
+  magres: 0
+  nutrition: 5
+  res: 32
+  size: 0
+  sound: 5
+  speed: 12
+  symbol: r
+  weight: 30
+ranger:
+  align: -3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 2
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+raven:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 1
+    damagetype: 11
+    number: 1
+    sides: 6
+  color: black
+  confer: 0
+  flag1: 537141249
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 4
+  magres: 0
+  nutrition: 20
+  res: 0
+  size: 1
+  sound: 6
+  speed: 20
+  symbol: B
+  weight: 40
+red dragon:
+  align: -4
+  armor: -1
+  attacks:
+  - attacktype: 12
+    damagetype: 2
+    number: 6
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: red
+  confer: 1
+  flag1: 559947777
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 15
+  magres: 20
+  nutrition: 1500
+  res: 1
+  size: 7
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 4500
+red mold:
+  align: 0
+  armor: 9
+  attacks:
+  - attacktype: 0
+    damagetype: 2
+    number: 0
+    sides: 4
+  color: red
+  confer: 33
+  flag1: 130048
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 1
+  magres: 0
+  nutrition: 30
+  res: 33
+  size: 1
+  sound: 0
+  speed: 0
+  symbol: F
+  weight: 50
+red naga:
+  align: -4
+  armor: 4
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 12
+    damagetype: 2
+    number: 2
+    sides: 6
+  color: red
+  confer: 33
+  flag1: 1617455104
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 6
+  magres: 0
+  nutrition: 400
+  res: 33
+  size: 4
+  sound: 18
+  speed: 12
+  symbol: N
+  weight: 2600
+red naga hatchling:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: red
+  confer: 33
+  flag1: 1613260800
+  flag2: 512
+  frequency: 0
+  gflags: 32
+  level: 3
+  magres: 0
+  nutrition: 100
+  res: 33
+  size: 3
+  sound: 18
+  speed: 10
+  symbol: N
+  weight: 500
+rock mole:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: gray
+  confer: 0
+  flag1: 2147754016
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 3
+  magres: 20
+  nutrition: 30
+  res: 0
+  size: 1
+  sound: 0
+  speed: 3
+  symbol: r
+  weight: 30
+rock piercer:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: gray
+  confer: 0
+  flag1: 537164048
+  flag2: 0
+  frequency: 4
+  gflags: 32
+  level: 3
+  magres: 0
+  nutrition: 200
+  res: 0
+  size: 1
+  sound: 0
+  speed: 1
+  symbol: p
+  weight: 200
+rock troll:
+  align: -3
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 3
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: cyan
+  confer: 0
+  flag1: 545390592
+  flag2: 768
+  frequency: 1
+  gflags: 32
+  level: 9
+  magres: 0
+  nutrition: 300
+  res: 0
+  size: 3
+  sound: 9
+  speed: 12
+  symbol: T
+  weight: 1200
+rogue:
+  align: -3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 1
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+rope golem:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 7
+    damagetype: 0
+    number: 6
+    sides: 1
+  color: brown
+  confer: 0
+  flag1: 197632
+  flag2: 0
+  frequency: 1
+  gflags: 16
+  level: 4
+  magres: 0
+  nutrition: 0
+  res: 36
+  size: 3
+  sound: 0
+  speed: 9
+  symbol: ''''
+  weight: 450
+roshi:
+  align: 3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 5
+  magres: 10
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 33
+  speed: 12
+  symbol: '@'
+  weight: 1450
+rothe:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: brown
+  confer: 0
+  flag1: 1610883072
+  flag2: 512
+  frequency: 4
+  gflags: 160
+  level: 2
+  magres: 0
+  nutrition: 100
+  res: 0
+  size: 3
+  sound: 0
+  speed: 9
+  symbol: q
+  weight: 400
+rust monster:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 5
+    damagetype: 24
+    number: 0
+    sides: 0
+  - attacktype: 5
+    damagetype: 24
+    number: 0
+    sides: 0
+  - attacktype: 0
+    damagetype: 24
+    number: 0
+    sides: 0
+  color: brown
+  confer: 0
+  flag1: 2147753986
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 250
+  res: 0
+  size: 2
+  sound: 0
+  speed: 18
+  symbol: R
+  weight: 1000
+salamander:
+  align: -9
+  armor: -1
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 5
+    damagetype: 2
+    number: 1
+    sides: 6
+  - attacktype: 7
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 7
+    damagetype: 2
+    number: 3
+    sides: 6
+  color: orange
+  confer: 1
+  flag1: 271187968
+  flag2: 512
+  frequency: 1
+  gflags: 1024
+  level: 8
+  magres: 0
+  nutrition: 400
+  res: 5
+  size: 2
+  sound: 18
+  speed: 12
+  symbol: ':'
+  weight: 1500
+samurai:
+  align: 3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 1
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+sandestin:
+  align: -5
+  armor: 4
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: gray
+  confer: 0
+  flag1: 131072
+  flag2: 768
+  frequency: 1
+  gflags: 1040
+  level: 13
+  magres: 60
+  nutrition: 400
+  res: 128
+  size: 2
+  sound: 29
+  speed: 12
+  symbol: '&'
+  weight: 1500
+sasquatch:
+  align: 2
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: gray
+  confer: 0
+  flag1: 1627783168
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 7
+  magres: 0
+  nutrition: 750
+  res: 0
+  size: 3
+  sound: 4
+  speed: 15
+  symbol: Y
+  weight: 1550
+scorpion:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 2
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 2
+  - attacktype: 6
+    damagetype: 7
+    number: 1
+    sides: 4
+  color: red
+  confer: 32
+  flag1: 809771136
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 100
+  res: 32
+  size: 1
+  sound: 0
+  speed: 15
+  symbol: s
+  weight: 50
+sergeant:
+  align: -3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 1
+  gflags: 160
+  level: 8
+  magres: 5
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 22
+  speed: 10
+  symbol: '@'
+  weight: 1450
+sewer rat:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 3
+  color: brown
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 1
+  gflags: 160
+  level: 0
+  magres: 0
+  nutrition: 12
+  res: 0
+  size: 0
+  sound: 5
+  speed: 12
+  symbol: r
+  weight: 20
+shade:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 5
+    damagetype: 14
+    number: 2
+    sides: 6
+  - attacktype: 5
+    damagetype: 13
+    number: 1
+    sides: 6
+  color: black
+  confer: 0
+  flag1: 17957897
+  flag2: 256
+  frequency: 0
+  gflags: 528
+  level: 12
+  magres: 0
+  nutrition: 0
+  res: 174
+  size: 2
+  sound: 11
+  speed: 10
+  symbol: ' '
+  weight: 1450
+shark:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 5
+    sides: 6
+  color: gray
+  confer: 0
+  flag1: 543975938
+  flag2: 0
+  frequency: 0
+  gflags: 544
+  level: 7
+  magres: 0
+  nutrition: 350
+  res: 0
+  size: 3
+  sound: 0
+  speed: 12
+  symbol: ;
+  weight: 500
+shocking sphere:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 13
+    damagetype: 6
+    number: 4
+    sides: 6
+  color: bright blue
+  confer: 16
+  flag1: 123905
+  flag2: 512
+  frequency: 2
+  gflags: 48
+  level: 6
+  magres: 0
+  nutrition: 10
+  res: 16
+  size: 1
+  sound: 0
+  speed: 13
+  symbol: e
+  weight: 10
+shopkeeper:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 4
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 4
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 12
+  magres: 50
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 34
+  speed: 18
+  symbol: '@'
+  weight: 1450
+shrieker:
+  align: 0
+  armor: 7
+  attacks: []
+  color: magenta
+  confer: 32
+  flag1: 130048
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 3
+  magres: 0
+  nutrition: 100
+  res: 32
+  size: 1
+  sound: 15
+  speed: 1
+  symbol: F
+  weight: 100
+silver dragon:
+  align: 4
+  armor: -1
+  attacks:
+  - attacktype: 12
+    damagetype: 3
+    number: 4
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: bright cyan
+  confer: 0
+  flag1: 559947777
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 15
+  magres: 20
+  nutrition: 1500
+  res: 2
+  size: 7
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 4500
+skeleton:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 5
+    damagetype: 13
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 2294784
+  flag2: 256
+  frequency: 0
+  gflags: 528
+  level: 12
+  magres: 0
+  nutrition: 5
+  res: 166
+  size: 2
+  sound: 16
+  speed: 8
+  symbol: Z
+  weight: 300
+small mimic:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 539292932
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 7
+  magres: 0
+  nutrition: 200
+  res: 64
+  size: 2
+  sound: 0
+  speed: 3
+  symbol: m
+  weight: 300
+snake:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 2
+    damagetype: 7
+    number: 1
+    sides: 6
+  color: brown
+  confer: 32
+  flag1: 810313858
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 4
+  magres: 0
+  nutrition: 80
+  res: 32
+  size: 1
+  sound: 7
+  speed: 15
+  symbol: S
+  weight: 100
+soldier:
+  align: -2
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: gray
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 1
+  gflags: 160
+  level: 6
+  magres: 0
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 22
+  speed: 10
+  symbol: '@'
+  weight: 1450
+soldier ant:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 6
+    damagetype: 7
+    number: 3
+    sides: 4
+  color: blue
+  confer: 32
+  flag1: 809771008
+  flag2: 0
+  frequency: 2
+  gflags: 160
+  level: 3
+  magres: 0
+  nutrition: 5
+  res: 32
+  size: 0
+  sound: 0
+  speed: 18
+  symbol: a
+  weight: 20
+spotted jelly:
+  align: 0
+  armor: 8
+  attacks:
+  - attacktype: 0
+    damagetype: 8
+    number: 0
+    sides: 6
+  color: green
+  confer: 0
+  flag1: 134347780
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 5
+  magres: 10
+  nutrition: 20
+  res: 192
+  size: 2
+  sound: 0
+  speed: 0
+  symbol: j
+  weight: 50
+stalker:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 4
+    sides: 4
+  color: white
+  confer: 0
+  flag1: 17039361
+  flag2: 256
+  frequency: 3
+  gflags: 32
+  level: 8
+  magres: 0
+  nutrition: 400
+  res: 0
+  size: 3
+  sound: 0
+  speed: 12
+  symbol: E
+  weight: 900
+steam vortex:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 11
+    damagetype: 2
+    number: 1
+    sides: 8
+  color: blue
+  confer: 0
+  flag1: 1176577
+  flag2: 512
+  frequency: 2
+  gflags: 1072
+  level: 7
+  magres: 30
+  nutrition: 0
+  res: 165
+  size: 4
+  sound: 0
+  speed: 22
+  symbol: v
+  weight: 0
+stone giant:
+  align: 2
+  armor: 0
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 10
+  color: gray
+  confer: 0
+  flag1: 537001984
+  flag2: 768
+  frequency: 1
+  gflags: 160
+  level: 6
+  magres: 0
+  nutrition: 750
+  res: 0
+  size: 4
+  sound: 39
+  speed: 6
+  symbol: H
+  weight: 2250
+stone golem:
+  align: 0
+  armor: 5
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 8
+  color: gray
+  confer: 0
+  flag1: 2294784
+  flag2: 0
+  frequency: 1
+  gflags: 16
+  level: 14
+  magres: 50
+  nutrition: 0
+  res: 164
+  size: 3
+  sound: 0
+  speed: 6
+  symbol: ''''
+  weight: 1900
+storm giant:
+  align: -3
+  armor: 3
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 12
+  color: blue
+  confer: 16
+  flag1: 537001984
+  flag2: 768
+  frequency: 1
+  gflags: 160
+  level: 16
+  magres: 10
+  nutrition: 750
+  res: 16
+  size: 4
+  sound: 39
+  speed: 12
+  symbol: H
+  weight: 2250
+straw golem:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 2
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 2
+  color: yellow
+  confer: 0
+  flag1: 197632
+  flag2: 0
+  frequency: 1
+  gflags: 16
+  level: 3
+  magres: 0
+  nutrition: 0
+  res: 36
+  size: 3
+  sound: 0
+  speed: 12
+  symbol: ''''
+  weight: 400
+student:
+  align: 3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743840
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 5
+  magres: 10
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 33
+  speed: 12
+  symbol: '@'
+  weight: 1450
+succubus:
+  align: -9
+  armor: 0
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 2
+    damagetype: 15
+    number: 2
+    sides: 6
+  color: gray
+  confer: 0
+  flag1: 268566529
+  flag2: 768
+  frequency: 1
+  gflags: 16
+  level: 6
+  magres: 70
+  nutrition: 400
+  res: 33
+  size: 2
+  sound: 26
+  speed: 12
+  symbol: '&'
+  weight: 1450
+tengu:
+  align: 7
+  armor: 5
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 7
+  color: cyan
+  confer: 32
+  flag1: 100663296
+  flag2: 768
+  frequency: 3
+  gflags: 32
+  level: 6
+  magres: 30
+  nutrition: 200
+  res: 32
+  size: 1
+  sound: 6
+  speed: 13
+  symbol: i
+  weight: 300
+thug:
+  align: -3
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 5
+  magres: 10
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 33
+  speed: 12
+  symbol: '@'
+  weight: 1450
+tiger:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 4
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 10
+  color: yellow
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 6
+  magres: 0
+  nutrition: 300
+  res: 0
+  size: 3
+  sound: 4
+  speed: 12
+  symbol: f
+  weight: 600
+titan:
+  align: 9
+  armor: -3
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 255
+    damagetype: 241
+    number: 0
+    sides: 0
+  color: magenta
+  confer: 0
+  flag1: 1610743809
+  flag2: 768
+  frequency: 1
+  gflags: 0
+  level: 16
+  magres: 70
+  nutrition: 900
+  res: 0
+  size: 4
+  sound: 37
+  speed: 18
+  symbol: H
+  weight: 2300
+titanothere:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 8
+  color: gray
+  confer: 0
+  flag1: 1076109312
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 12
+  magres: 0
+  nutrition: 650
+  res: 0
+  size: 3
+  sound: 0
+  speed: 12
+  symbol: q
+  weight: 2650
+trapper:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 11
+    damagetype: 26
+    number: 1
+    sides: 10
+  color: green
+  confer: 0
+  flag1: 537194752
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 12
+  magres: 0
+  nutrition: 350
+  res: 0
+  size: 4
+  sound: 0
+  speed: 3
+  symbol: t
+  weight: 800
+troll:
+  align: -3
+  armor: 4
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 4
+    sides: 2
+  - attacktype: 1
+    damagetype: 0
+    number: 4
+    sides: 2
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: brown
+  confer: 0
+  flag1: 545390592
+  flag2: 768
+  frequency: 2
+  gflags: 32
+  level: 7
+  magres: 0
+  nutrition: 350
+  res: 0
+  size: 3
+  sound: 9
+  speed: 12
+  symbol: T
+  weight: 800
+umber hulk:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 4
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 5
+  - attacktype: 15
+    damagetype: 25
+    number: 0
+    sides: 0
+  color: brown
+  confer: 0
+  flag1: 536870944
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 9
+  magres: 25
+  nutrition: 500
+  res: 0
+  size: 3
+  sound: 0
+  speed: 6
+  symbol: U
+  weight: 1200
+valkyrie:
+  align: -1
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 1
+  nutrition: 400
+  res: 2
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+vampire:
+  align: -8
+  armor: 1
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 2
+    damagetype: 15
+    number: 1
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 276956161
+  flag2: 512
+  frequency: 1
+  gflags: 48
+  level: 10
+  magres: 25
+  nutrition: 400
+  res: 36
+  size: 2
+  sound: 27
+  speed: 12
+  symbol: V
+  weight: 1450
+vampire bat:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 2
+    damagetype: 7
+    number: 0
+    sides: 0
+  color: black
+  confer: 0
+  flag1: 1887707137
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 20
+  res: 36
+  size: 1
+  sound: 5
+  speed: 20
+  symbol: B
+  weight: 30
+vampire lord:
+  align: -9
+  armor: 0
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 2
+    damagetype: 15
+    number: 1
+    sides: 8
+  color: blue
+  confer: 0
+  flag1: 276956161
+  flag2: 512
+  frequency: 1
+  gflags: 48
+  level: 12
+  magres: 50
+  nutrition: 400
+  res: 36
+  size: 2
+  sound: 27
+  speed: 14
+  symbol: V
+  weight: 1450
+violet fungus:
+  align: 0
+  armor: 7
+  attacks:
+  - attacktype: 5
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 5
+    damagetype: 19
+    number: 0
+    sides: 0
+  color: magenta
+  confer: 32
+  flag1: 130048
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 3
+  magres: 0
+  nutrition: 100
+  res: 32
+  size: 1
+  sound: 0
+  speed: 1
+  symbol: F
+  weight: 100
+vrock:
+  align: -9
+  armor: 0
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: red
+  confer: 0
+  flag1: 268435456
+  flag2: 768
+  frequency: 2
+  gflags: 1168
+  level: 8
+  magres: 50
+  nutrition: 400
+  res: 33
+  size: 3
+  sound: 0
+  speed: 12
+  symbol: '&'
+  weight: 1450
+warg:
+  align: -5
+  armor: 4
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: brown
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 2
+  gflags: 160
+  level: 7
+  magres: 0
+  nutrition: 350
+  res: 0
+  size: 2
+  sound: 1
+  speed: 12
+  symbol: d
+  weight: 850
+warhorse:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 10
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 1074012160
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 7
+  magres: 0
+  nutrition: 350
+  res: 0
+  size: 3
+  sound: 10
+  speed: 24
+  symbol: u
+  weight: 1800
+warrior:
+  align: -1
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 5
+  magres: 10
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 33
+  speed: 12
+  symbol: '@'
+  weight: 1450
+watch captain:
+  align: -4
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 3
+    sides: 4
+  - attacktype: 254
+    damagetype: 0
+    number: 3
+    sides: 4
+  color: green
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 1
+  gflags: 544
+  level: 10
+  magres: 15
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 22
+  speed: 10
+  symbol: '@'
+  weight: 1450
+watchman:
+  align: -2
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 8
+  color: gray
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 1
+  gflags: 672
+  level: 6
+  magres: 0
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 22
+  speed: 10
+  symbol: '@'
+  weight: 1450
+water demon:
+  align: -7
+  armor: -4
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 3
+  color: blue
+  confer: 0
+  flag1: 268566530
+  flag2: 768
+  frequency: 0
+  gflags: 528
+  level: 8
+  magres: 30
+  nutrition: 400
+  res: 33
+  size: 2
+  sound: 24
+  speed: 12
+  symbol: '&'
+  weight: 1450
+water elemental:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 5
+    sides: 6
+  color: blue
+  confer: 0
+  flag1: 127490
+  flag2: 0
+  frequency: 1
+  gflags: 16
+  level: 8
+  magres: 30
+  nutrition: 0
+  res: 160
+  size: 4
+  sound: 0
+  speed: 6
+  symbol: E
+  weight: 2500
+water moccasin:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 2
+    damagetype: 7
+    number: 1
+    sides: 6
+  color: red
+  confer: 32
+  flag1: 810313858
+  flag2: 0
+  frequency: 0
+  gflags: 608
+  level: 4
+  magres: 0
+  nutrition: 80
+  res: 32
+  size: 1
+  sound: 7
+  speed: 15
+  symbol: S
+  weight: 150
+water nymph:
+  align: 0
+  armor: 9
+  attacks:
+  - attacktype: 1
+    damagetype: 21
+    number: 0
+    sides: 0
+  - attacktype: 1
+    damagetype: 22
+    number: 0
+    sides: 0
+  color: blue
+  confer: 0
+  flag1: 33685506
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 3
+  magres: 20
+  nutrition: 300
+  res: 0
+  size: 2
+  sound: 26
+  speed: 12
+  symbol: n
+  weight: 600
+water troll:
+  align: -3
+  armor: 4
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 2
+    sides: 8
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  color: blue
+  confer: 0
+  flag1: 545390594
+  flag2: 768
+  frequency: 0
+  gflags: 544
+  level: 11
+  magres: 40
+  nutrition: 350
+  res: 0
+  size: 3
+  sound: 9
+  speed: 14
+  symbol: T
+  weight: 1200
+werejackal:
+  align: -7
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: red
+  confer: 0
+  flag1: 1887567872
+  flag2: 512
+  frequency: 1
+  gflags: 0
+  level: 2
+  magres: 10
+  nutrition: 400
+  res: 32
+  size: 2
+  sound: 38
+  speed: 12
+  symbol: '@'
+  weight: 1450
+wererat:
+  align: -7
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 1887567872
+  flag2: 512
+  frequency: 1
+  gflags: 0
+  level: 2
+  magres: 10
+  nutrition: 400
+  res: 32
+  size: 2
+  sound: 38
+  speed: 12
+  symbol: '@'
+  weight: 1450
+werewolf:
+  align: -7
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: orange
+  confer: 0
+  flag1: 1887567872
+  flag2: 512
+  frequency: 1
+  gflags: 0
+  level: 5
+  magres: 20
+  nutrition: 400
+  res: 32
+  size: 2
+  sound: 38
+  speed: 12
+  symbol: '@'
+  weight: 1450
+white dragon:
+  align: -5
+  armor: -1
+  attacks:
+  - attacktype: 12
+    damagetype: 3
+    number: 4
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: white
+  confer: 2
+  flag1: 559947777
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 15
+  magres: 20
+  nutrition: 1500
+  res: 2
+  size: 7
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 4500
+white unicorn:
+  align: 7
+  armor: 2
+  attacks:
+  - attacktype: 4
+    damagetype: 0
+    number: 1
+    sides: 12
+  - attacktype: 3
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 32
+  flag1: 1073750016
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 4
+  magres: 70
+  nutrition: 300
+  res: 32
+  size: 3
+  sound: 10
+  speed: 24
+  symbol: u
+  weight: 1300
+winged gargoyle:
+  align: -12
+  armor: -2
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 4
+  color: magenta
+  confer: 128
+  flag1: 6423553
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 9
+  magres: 0
+  nutrition: 300
+  res: 128
+  size: 2
+  sound: 9
+  speed: 15
+  symbol: g
+  weight: 1200
+winter wolf:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 6
+  - attacktype: 12
+    damagetype: 3
+    number: 2
+    sides: 6
+  color: cyan
+  confer: 2
+  flag1: 537141248
+  flag2: 0
+  frequency: 1
+  gflags: 2080
+  level: 7
+  magres: 20
+  nutrition: 300
+  res: 2
+  size: 3
+  sound: 1
+  speed: 12
+  symbol: d
+  weight: 700
+winter wolf cub:
+  align: -5
+  armor: 4
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 8
+  - attacktype: 12
+    damagetype: 3
+    number: 1
+    sides: 8
+  color: cyan
+  confer: 2
+  flag1: 537141248
+  flag2: 0
+  frequency: 2
+  gflags: 2208
+  level: 5
+  magres: 0
+  nutrition: 200
+  res: 2
+  size: 1
+  sound: 1
+  speed: 12
+  symbol: d
+  weight: 250
+wizard:
+  align: 0
+  armor: 10
+  attacks:
+  - attacktype: 254
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: white
+  confer: 0
+  flag1: 1610743808
+  flag2: 512
+  frequency: 0
+  gflags: 512
+  level: 10
+  magres: 3
+  nutrition: 400
+  res: 0
+  size: 2
+  sound: 20
+  speed: 12
+  symbol: '@'
+  weight: 1450
+wolf:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 2
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 537141248
+  flag2: 512
+  frequency: 2
+  gflags: 160
+  level: 5
+  magres: 0
+  nutrition: 250
+  res: 0
+  size: 2
+  sound: 1
+  speed: 12
+  symbol: d
+  weight: 500
+wood golem:
+  align: 0
+  armor: 4
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 4
+  color: brown
+  confer: 0
+  flag1: 2294784
+  flag2: 0
+  frequency: 1
+  gflags: 16
+  level: 7
+  magres: 0
+  nutrition: 0
+  res: 36
+  size: 3
+  sound: 0
+  speed: 3
+  symbol: ''''
+  weight: 900
+wood nymph:
+  align: 0
+  armor: 9
+  attacks:
+  - attacktype: 1
+    damagetype: 21
+    number: 0
+    sides: 0
+  - attacktype: 1
+    damagetype: 22
+    number: 0
+    sides: 0
+  color: green
+  confer: 0
+  flag1: 33685504
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 3
+  magres: 20
+  nutrition: 300
+  res: 0
+  size: 2
+  sound: 26
+  speed: 12
+  symbol: n
+  weight: 600
+woodchuck:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 6
+  color: brown
+  confer: 0
+  flag1: 1074012194
+  flag2: 512
+  frequency: 0
+  gflags: 544
+  level: 3
+  magres: 20
+  nutrition: 30
+  res: 0
+  size: 1
+  sound: 0
+  speed: 3
+  symbol: r
+  weight: 30
+wraith:
+  align: -6
+  armor: 4
+  attacks:
+  - attacktype: 5
+    damagetype: 15
+    number: 1
+    sides: 6
+  color: black
+  confer: 0
+  flag1: 1180673
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 6
+  magres: 15
+  nutrition: 0
+  res: 166
+  size: 2
+  sound: 0
+  speed: 12
+  symbol: W
+  weight: 0
+wumpus:
+  align: 0
+  armor: 2
+  attacks:
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 6
+  color: cyan
+  confer: 0
+  flag1: 1610883088
+  flag2: 512
+  frequency: 1
+  gflags: 32
+  level: 8
+  magres: 10
+  nutrition: 500
+  res: 0
+  size: 3
+  sound: 13
+  speed: 3
+  symbol: q
+  weight: 2500
+xan:
+  align: 0
+  armor: -4
+  attacks:
+  - attacktype: 6
+    damagetype: 17
+    number: 1
+    sides: 4
+  color: red
+  confer: 32
+  flag1: 268705793
+  flag2: 512
+  frequency: 3
+  gflags: 32
+  level: 7
+  magres: 0
+  nutrition: 300
+  res: 32
+  size: 0
+  sound: 8
+  speed: 18
+  symbol: x
+  weight: 300
+xorn:
+  align: 0
+  armor: -2
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 3
+  - attacktype: 2
+    damagetype: 0
+    number: 4
+    sides: 6
+  color: brown
+  confer: 128
+  flag1: 2149581832
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 8
+  magres: 20
+  nutrition: 700
+  res: 131
+  size: 2
+  sound: 3
+  speed: 9
+  symbol: X
+  weight: 1200
+yellow dragon:
+  align: 7
+  armor: -1
+  attacks:
+  - attacktype: 12
+    damagetype: 8
+    number: 4
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 8
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: yellow
+  confer: 128
+  flag1: 694165505
+  flag2: 0
+  frequency: 1
+  gflags: 32
+  level: 15
+  magres: 20
+  nutrition: 1500
+  res: 192
+  size: 7
+  sound: 3
+  speed: 9
+  symbol: D
+  weight: 4500
+yellow light:
+  align: 0
+  armor: 0
+  attacks:
+  - attacktype: 13
+    damagetype: 11
+    number: 10
+    sides: 20
+  color: yellow
+  confer: 0
+  flag1: 1178629
+  flag2: 512
+  frequency: 4
+  gflags: 48
+  level: 3
+  magres: 0
+  nutrition: 0
+  res: 255
+  size: 1
+  sound: 0
+  speed: 15
+  symbol: y
+  weight: 0
+yellow mold:
+  align: 0
+  armor: 9
+  attacks:
+  - attacktype: 0
+    damagetype: 12
+    number: 0
+    sides: 4
+  color: yellow
+  confer: 32
+  flag1: 268565504
+  flag2: 0
+  frequency: 2
+  gflags: 32
+  level: 1
+  magres: 0
+  nutrition: 30
+  res: 32
+  size: 1
+  sound: 0
+  speed: 0
+  symbol: F
+  weight: 50
+yeti:
+  align: 0
+  armor: 6
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 1
+    damagetype: 0
+    number: 1
+    sides: 6
+  - attacktype: 2
+    damagetype: 0
+    number: 1
+    sides: 4
+  color: white
+  confer: 2
+  flag1: 537264128
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 5
+  magres: 0
+  nutrition: 700
+  res: 2
+  size: 3
+  sound: 4
+  speed: 15
+  symbol: Y
+  weight: 1600
+zruty:
+  align: 0
+  armor: 3
+  attacks:
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 4
+  - attacktype: 1
+    damagetype: 0
+    number: 3
+    sides: 4
+  - attacktype: 2
+    damagetype: 0
+    number: 3
+    sides: 6
+  color: brown
+  confer: 0
+  flag1: 537264128
+  flag2: 512
+  frequency: 2
+  gflags: 32
+  level: 9
+  magres: 0
+  nutrition: 600
+  res: 0
+  size: 3
+  sound: 0
+  speed: 8
+  symbol: z
+  weight: 1200
