@@ -2,9 +2,10 @@ from Tkinter import *
 from tkFont import Font
 from PIL import Image
 from PIL import ImageTk
-from collections import deque
 
+from collections import deque
 import threading
+import time
 
 # local imports
 from parser import *
@@ -41,13 +42,14 @@ class Application(Frame):
 		self.status_dirty = False
 		self.messages = deque()
 		self.more = False
-		self.clear_message = False
+		self.clear_message = True
 
 	def keypress(self, event):
 		self.lock.acquire()
 		if self.more:
 			if (event.char == ' '):
 				self.more = False
+				self.clear_message = True
 			elif (event.char == '\x1b'):
 				self.more = False
 				self.messages.clear()
@@ -74,6 +76,8 @@ class Application(Frame):
 		basestr = self.parser.basestr.strip()
 		self.parser.basestr = ''
 		if basestr.endswith("--More--"):
+			# So it shows in ttyrec, watchers, etc.
+			time.sleep(0.5)
 			self.nh.write(' ')
 			basestr = basestr[0:-8]
 		self.messages.extend(filter(str.strip, basestr.split('\n')))
@@ -135,14 +139,19 @@ class Application(Frame):
 						    image=self.images[pending],
 						    state=NORMAL)
 		self.lock.acquire()
-		if self.messages:
-			if not self.more:
-				msg = self.messages.popleft()
-				self.message_label.configure(text=msg)
-				self.show_more(len(self.messages))
-				self.clear_message = False
+		msg = ""
+		while (self.messages and self.clear_message):
+			if self.more:
+				break
+			if (len(msg) + len(self.messages[0]) > 80):
+				break
+			msg += self.messages.popleft()+"  "
+		if (msg):
+			self.message_label.configure(text=msg)
+			self.clear_message = False
 		elif self.clear_message:
 			self.message_label.configure(text="")
+		self.show_more(len(self.messages))
 		if self.status_dirty:
 			self.status_dirty = False
 			# Some fields are always white
@@ -157,6 +166,7 @@ class Application(Frame):
 			self.turns_label.configure(
 				text=self.parser.status.turns)
 			# curses-style colored status
+			# TODO: hpmon-style coloring of HP?
 			self.color_stat("str")
 			self.color_stat("dex")
 			self.color_stat("con")
