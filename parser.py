@@ -1,3 +1,4 @@
+import binascii
 import re
 import sys
 import threading
@@ -13,6 +14,16 @@ escK_re = re.compile(r'\[([0-2])?K')
 escJ_re = re.compile(r'\[([0-2])?J')
 escz_re = re.compile(r'\[([0-3])(?:\;([0-9]*))?z')
 
+# Status line regexes
+status1_re = re.compile(r'^(.*) the ([^ ]*) *'+
+	r'St:([1-9][0-9]?)(?:/([0-9][0-9]))? Dx:([1-9][0-9]?) '+
+	r'Co:([1-9][0-9]?) In:([1-9][0-9]?) Wi:([1-9][0-9]?) '+
+	r'Ch:([1-9][0-9]?) *([^ ]*) S:([0-9]*)')
+status2_re = re.compile(r'^Dlvl:(-?[1-9][0-9]?) *\$:([0-9]*) *'+
+	r'HP:([0-9]*)\(([0-9]*)\) *Pw:([0-9]*)\(([0-9]*)\) *'+
+	r'AC:(-?[0-9]*) *Xp:([0-9]*)/([0-9]*) *T:([0-9]*) *'+
+	r'([^ ]*(?: [^ ]+)*)?')
+
 # vt_tiledata window numbers
 BASE_WINDOW = 0
 MSG_WINDOW = 1
@@ -21,8 +32,84 @@ MAP_WINDOW = 3
 INV_WINDOW = 4
 OTHER_WINDOW_BASE = 5
 
-def noop():
+def noop(*args):
 	pass
+
+STATUS_START = 22
+
+class Status:
+	def __init__(self):
+		self.dirty = False
+		self.lines = [
+			bytearray(80),
+			bytearray(80),
+		]
+		for y in (0, 1):
+			for x in range(0, 80):
+				self.lines[y][x] = ord(' ')
+
+	def update_char(self, x, y, c):
+		self.lines[y][x] = ord(c)
+		self.dirty = True
+
+	def parse(self):
+		self.dirty = False
+		m = status1_re.match(self.lines[0])
+		self.player = m.group(1)
+		self.rank = m.group(2)
+		self.str = int(m.group(3))
+		self.str_percent = m.group(4)
+		if (self.str_percent is None):
+			self.str_percent = None
+		else:
+			self.str_percent = int(self.str_percent)
+		self.dex = int(m.group(5))
+		self.con = int(m.group(6))
+		self.int = int(m.group(7))
+		self.wis = int(m.group(8))
+		self.cha = int(m.group(9))
+		self.align = m.group(10)
+		self.score = int(m.group(11))
+
+		m = status2_re.match(self.lines[1])
+		self.dungeon_level = int(m.group(1))
+		self.gold = int(m.group(2))
+		self.hp = int(m.group(3))
+		self.hpmax = int(m.group(4))
+		self.pw = int(m.group(5))
+		self.pwmax = int(m.group(6))
+		self.ac = int(m.group(7))
+		self.xp_level = int(m.group(8))
+		self.xp = int(m.group(9))
+		self.turns = int(m.group(10))
+		self.effects = str(m.group(11)).split(' ')
+
+MAP_START = 1
+MAP_ROWS = 21
+
+class Map:
+
+	def __init__(self):
+		# Map is 80x21 max in nethack, accessing tiles outside that
+		# range will give a range error
+		self.tiles = [ [None]*MAP_ROWS for i in range(COLS) ]
+		self.update_func = noop
+
+	def get_tile(self, x, y):
+		return self.tiles[x][y]
+
+	def clear_rows(self, start_y, end_y):
+		for x in range(0, COLS):
+			for y in range(start_y, end_y):
+				self.set_tile(x, y, None)
+
+	def clear_cols(self, start_x, end_x, y):
+		for x in range(start_x, end_x):
+			self.set_tile(x, y, None)
+
+	def set_tile(self, x, y, tile):
+		self.tiles[x][y] = tile
+		self.update_func(x, y, tile)
 
 class NethackParser:
 
@@ -35,34 +122,43 @@ class NethackParser:
 		self.tilech = None
 		self.end_of_data = False
 
-		# TODO: these will need to change
-		self.pending_tiles = list()
-		self.current_tiles = list()
+		self.map = Map()
+		self.status = Status()
 
 		self.basestr = ""
 		self.msgstr = ""
+		self.invstr = ""
 
 		self.idle_func = noop
 
-	def output_thread(self, q):
-		ch = self.nh.read()
-		while (ch):
-			q.put(ch)
-			ch = self.nh.read()
-		print "Nethack exited (EOF)"
+	def newline_buffers(self):
+		self.newline_buffer("basestr")
+		self.newline_buffer("msgstr")
+		self.newline_buffer("invstr")
+
+	def newline_buffer(self, attr):
+		str = getattr(self, attr)
+		if (str == ""):
+			return
+		elif (str[-1] != '\n'):
+			setattr(self, attr, str+"\n")
 
 	def cursor_rel_x(self, adj):
+		self.newline_buffers()
 		self.cursor_x += adj
 		if (self.cursor_x < 0):
 			self.cursor_x = 0
 		if (self.cursor_x > COLS):
+			print "Cursor beyond screen: x:", self.cursor_x
 			self.cursor_x = COLS
 
 	def cursor_rel_y(self, adj):
+		self.newline_buffers()
 		self.cursor_y += adj
 		if (self.cursor_y < 0):
 			self.cursor_y = 0
 		if (self.cursor_y > ROWS):
+			print "Cursor beyond screen: y:", self.cursor_y
 			self.cursor_y = ROWS
 
 	def process_char(self, ch):
@@ -111,6 +207,7 @@ class NethackParser:
 					self.cursor_x = int(str)-1
 				else:
 					self.cursor_x = 0
+				self.newline_buffers()
 				self.escapeseq = None
 			elif (ch == 'M'):
 				# down one line
@@ -118,7 +215,7 @@ class NethackParser:
 					print "Error: illegal escape:",\
 						self.escapeseq
 					sys.exit(1)
-				self.cursor_rel_y(1)
+				self.cursor_rel_y(-1)
 				self.escapeseq = None
 			elif (ch == 'C'):
 				# right one col
@@ -144,17 +241,20 @@ class NethackParser:
 					sys.exit(1)
 				str = m.group(1)
 				if not str or str == "0":
-					for c in range(self.cursor_x, COLS-1):
-						self.pending_tiles.append(
-							(c, self.cursor_y, -1))
+					start_x = self.cursor_x
+					end_x = COLS
 				elif str == "1":
-					for c in range(0, self.cursor_x-1):
-						self.pending_tiles.append(
-							(c, self.cursor_y, -1))
+					start_x = 0
+					end_x = self.cursor_x
 				elif str == "2":
-					for c in range(0, COLS-1):
-						self.pending_tiles.append(
-							(c, self.cursor_y, -1))
+					start_x = 0
+					end_x = COLS
+				if (self.window == MAP_WINDOW and
+				    self.cursor_y >= MAP_START and
+				    self.cursor_y < MAP_ROWS+MAP_START):
+					self.map.clear_cols(start_x, end_x,
+						self.cursor_y-MAP_START)
+				# TODO: handle clears outside the map
 				self.escapeseq = None
 			elif (ch == 'J'):
 				m = escJ_re.match(self.escapeseq)
@@ -163,24 +263,20 @@ class NethackParser:
 					      self.escapeseq
 				str = m.group(1)
 				if not str or str == "0":
-					for r in range(self.cursor_y+1, ROWS-1):
-						for c in range(0, COLS-1):
-							self.pending_tiles.append(
-								(c, r, -1))
+					start_y = self.cursor_y-MAP_START+1
+					end_y = MAP_ROWS
 				elif str == "1":
-					for r in range(0, self.cursor_y-1):
-						for c in range(0, COLS-1):
-							self.pending_tiles.append(
-								(c, r, -1))
+					start_y = 0
+					end_y = self.cursor_y-MAP_START
 				elif str == "2":
-					for r in range(0, ROWS-1):
-						for c in range(0, COLS-1):
-							self.pending_tiles.append(
-								(c, r, -1))
+					start_y = 0
+					end_y = MAP_ROWS
 				else:
 					print "Error: illegal escape:",\
 						self.escapeseq
 					sys.exit(1)
+				if self.window == MAP_WINDOW:
+					self.map.clear_rows(start_y, end_y)
 				self.escapeseq = None
 			elif (ch == 'z'):
 				m = escz_re.match(self.escapeseq)
@@ -193,9 +289,10 @@ class NethackParser:
 					if (self.window != MAP_WINDOW):
 						print "Error: not in map window"
 						sys.exit(1)
-					self.pending_tiles.append(
-						(self.cursor_x, self.cursor_y, 
-						 int(m.group(2))))
+					self.map.set_tile(
+						self.cursor_x,
+						self.cursor_y-MAP_START,
+						 int(m.group(2)))
 					self.tilech = ""
 				elif (str == "1"):
 					if (self.window != MAP_WINDOW):
@@ -208,9 +305,8 @@ class NethackParser:
 					self.window = int(m.group(2))
 				elif (str == "3"):
 					self.end_of_data = True
-					# TODO apply updates
-					self.current_tiles = self.pending_tiles
-					self.pending_tiles = list()
+					# XXX: hack
+					self.window = MSG_WINDOW
 				else:
 					print "Error: illegal sequence:",\
 						self.escapeseq
@@ -220,6 +316,13 @@ class NethackParser:
 				if (self.escapeseq != "[?1049h"):
 					print "Error: illegal escape:",\
 					      self.escapeseq
+					sys.exit(1)
+				self.escapeseq = None
+			elif (ch == 'l'):
+				if (self.escapeseq != "[?1049l"):
+					print "Error: illegal escape:",\
+						self.escapeseq
+					sys.exit(1)
 				self.escapeseq = None
 			elif (ch == 'm'):
 				# ignore character attributes, color
@@ -243,9 +346,15 @@ class NethackParser:
 			if (ch == '\x08'):
 				self.cursor_rel_x(-1)
 				return
-
-			# A regular character advances the cursor
-			self.cursor_x += 1
+			# carriage return
+			if (ch == '\x0D'):
+				self.cursor_x = 0
+				return
+			# line feed
+			if (ch == '\x0A'):
+				self.cursor_rel_y(1)
+				return
+			# TODO: other movement chars??
 
 			# A tile should contain only one non-escape char
 			if self.tilech == '':
@@ -265,33 +374,43 @@ class NethackParser:
 				self.msgstr += ch
 			elif self.window == STATUS_WINDOW:
 				# TODO: need to update the status line in-place
-				pass
+				if (self.cursor_y >= STATUS_START):
+					self.status.update_char(
+						self.cursor_x,
+						self.cursor_y-STATUS_START,
+						ch)
+				else:
+					print "Error: data outside status line"
+					sys.exit(1)
 			elif self.window == MAP_WINDOW:
 				print "Error: non-tile data in map window:", ch
 				sys.exit(1)
 			elif self.window == INV_WINDOW:
-				# TODO
-				pass
+				self.invstr += ch
 			else:
 				# TODO
 				pass
+
+			# regular char advances cursor, don't use the method
+			# to avoid the newline message effect
+			self.cursor_x += 1
+			if (self.cursor_x > COLS):
+				self.cursor_x = COLS
+				print "Write beyond screen"
 		
 	def parser_loop(self):
-		output = Queue.Queue()
-		t = threading.Thread(target=self.output_thread, args=(output,))
-		t.daemon = True
-		t.start()
-
 		# TODO: use ttyrec instead (or in addition)
 		outlog = file("nethack.out", mode='w', buffering=0)
 
 		while True:
 			try:
 				while True:
-					ch = output.get(timeout=IDLE_TIMEOUT)
-					# TODO: switch to self.log_func()
+					ch = self.nh.read()
+					# TODO: switch to self.log_func() ?
 					outlog.write(ch)
 					self.process_char(ch)
+					if (self.end_of_data):
+						self.idle_func()
 			except Queue.Empty:
 				pass
 
@@ -300,7 +419,6 @@ class NethackParser:
 			# "output done" vt_tiledata then we can fire all the 
 			# pending events.
 
-			self.idle_func()
 
 	# Start the parser in its own thread
 	def start(self):
