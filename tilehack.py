@@ -43,44 +43,86 @@ class Application(Frame):
 		self.messages = deque()
 		self.more = False
 		self.clear_message = True
+		self.input_prompt = False
+		self.keyevents = deque()
+		self.idle = False
+
+	def process_input(self):
+		if not (self.idle or self.input_prompt):
+			# Still waiting on nethack, no more commands
+			return
+		if self.messages and not self.more:
+			# Messages are waiting to be displayed, no new commands
+			# allowed
+			return
+		try:
+			while True:
+				event = self.keyevents.popleft()
+				if self.more:
+					if (event.char == ' '):
+						self.more = False
+						self.clear_message = True
+					elif (event.char == '\x1b'):
+						self.more = False
+						self.messages.clear()
+						self.clear_message = True
+					else:
+						# ignore key
+						pass
+				elif (event.char):
+					self.clear_message = True
+					self.idle = False
+					self.nh.write(event.char)
+		except IndexError:
+			pass
 
 	def keypress(self, event):
 		self.lock.acquire()
-		if self.more:
-			if (event.char == ' '):
-				self.more = False
-				self.clear_message = True
-			elif (event.char == '\x1b'):
-				self.more = False
-				self.messages.clear()
-				self.clear_message = True
-			self.lock.release()
-			return
-		if (event.char):
-			self.clear_message = True
-			self.nh.write(event.char)
+		self.keyevents.append(event)
+		self.process_input()
 		self.lock.release()
 
 	def tile_update(self, x, y, tile):
 		self.pending_tile[x][y] = tile
 
 	def nh_idle(self):
+		is_more = False
 		self.lock.acquire()
 		if self.parser.status.dirty:
 			self.status_dirty = True
 			self.parser.status.parse()
-		if self.parser.msgstr:
-			self.messages.extend(filter(str.strip,
-				self.parser.msgstr.split('\n')))
-			self.parser.msgstr = ''
+
+		msgstr = self.parser.msgstr.strip()
+		self.parser.msgstr = ''
+		if msgstr.endswith("--More--"):
+			is_more = True
+			msgstr = msgstr[0:-8]
+		self.messages.extend(filter(str.strip,
+				msgstr.split('\n')))
+
 		basestr = self.parser.basestr.strip()
 		self.parser.basestr = ''
 		if basestr.endswith("--More--"):
+			is_more = True
+			basestr = basestr[0:-8]
+		self.messages.extend(filter(str.strip,
+				basestr.split('\n')))
+
+		self.input_prompt = False
+		if is_more:
 			# So it shows in ttyrec, watchers, etc.
 			time.sleep(0.5)
 			self.nh.write(' ')
-			basestr = basestr[0:-8]
-		self.messages.extend(filter(str.strip, basestr.split('\n')))
+			self.idle = False
+		elif self.parser.cursor_y == 0:
+			#TODO: dialog for input prompts?
+			#  Only multi-char input for dialog or single-char too?
+			#  Control echoing of chars from input
+			#  Cursor prompts (teleport, id by cursors, others?)
+			self.input_prompt = True
+		else:
+			self.idle = True
+		self.process_input()
 		self.lock.release()
 
 	def show_more(self, b):
@@ -149,6 +191,7 @@ class Application(Frame):
 		if (msg):
 			self.message_label.configure(text=msg)
 			self.clear_message = False
+			self.process_input()
 		elif self.clear_message:
 			self.message_label.configure(text="")
 		self.show_more(len(self.messages))
@@ -323,4 +366,5 @@ class Application(Frame):
 		self.after_idle(self.refresh)
 		self.mainloop()
 
-Application().main(sys.argv)
+app = Application()
+app.main(sys.argv)
