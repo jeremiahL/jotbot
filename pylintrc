@@ -1,0 +1,5 @@
+[BASIC]
+good-names=i,j,k,n,x,y
+
+[MESSAGES CONTROL]
+disable=too-few-public-methods

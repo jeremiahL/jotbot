@@ -6,7 +6,7 @@ set -e
 set -x
 
 # tests
-pylint server.py
+pylint server.py screen.py
 python tests.py
 set +x
 echo "All tests passed"

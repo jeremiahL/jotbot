@@ -1,12 +1,17 @@
 
 import unittest
 
+import os
 import time
 import server
 
 class TestDefaultSubprocess(unittest.TestCase):
 
     def setUp(self):
+        # constantly killing nethack messes up the locks
+        os.system(b'rm ~/nh/install/games/lib/nethackdir/*lock* 2> /dev/null')
+        # tests shouldn't use a savefile
+        os.system(b'rm ~/nh/install/games/lib/nethackdir/save/* 2> /dev/null')
         self.nh = server.default_subprocess()
 
     def tearDown(self):
