@@ -7,24 +7,24 @@ class CharAttributes:
 
     def __init__(self):
         """Initializes an empty attributes object."""
-        self.bitmask = 0
+        self.bitmap = 0
 
     def set(self, attr_num):
         """Set the numbered attribute in the bitmask."""
-        self.bitmask |= (1 << attr_num)
+        self.bitmap |= (1 << attr_num)
 
     def check(self, attr_num):
         """Return true if the numbered attribute is set."""
-        return self.bitmask & (1 << attr_num)
+        return self.bitmap & (1 << attr_num)
 
     def clear_all(self):
         """Clear all attributes that are currently set."""
-        self.bitmask = 0
+        self.bitmap = 0
 
     def enumerate(self):
         """Return an iterator that returns the number of all set
            attributes in the bitmask."""
-        bits = self.bitmask
+        bits = self.bitmap
         pos = 0
         while bits:
             if bits & 1:
@@ -35,7 +35,7 @@ class CharAttributes:
     def copy_to(self, target):
         """Copy all attributes in the current bitmask in to the
            given bitmask."""
-        target.bitmask = self.bitmask
+        target.bitmap = self.bitmap
 
 class CharData:
     """Represents a single character with its attributes."""
@@ -92,14 +92,14 @@ class WindowData:
         self.dirty_y_max = None
         self.dirty_y_min = None
         self.char_data = list()
-        for _ in range(ROWS):
-            window_row = list()
-            for _ in range(COLUMNS):
+        for _ in range(COLUMNS):
+            window_col = list()
+            for _ in range(ROWS):
                 if use_tile_data:
-                    window_row.append(TileData())
+                    window_col.append(TileData())
                 else:
-                    window_row.append(CharData())
-            self.char_data.append(window_row)
+                    window_col.append(CharData())
+            self.char_data.append(window_col)
 
     def has_dirty_data(self):
         """Return True if any characters in the window are dirty."""
@@ -175,7 +175,7 @@ class ScreenData:
            changes the data at the location, mark the character data as dirty."""
         current_data = self.get_current_data()
         if (current_data.char != char or
-                self.current_attributes.bitmask != current_data.attributes.bitmask):
+                self.current_attributes.bitmap != current_data.attributes.bitmap):
             current_data.char = char
             self.current_attributes.copy_to(current_data.attributes)
             self.set_current_dirty()
@@ -223,3 +223,14 @@ class ScreenData:
             for x in range(start_x, end_x):
                 self.get_data(win, x, y).clear()
                 self.windows[win].set_dirty(x, y)
+
+    def enumerate_row(self, win, start_x, end_x, y):
+        """Return an iterator that returns a portion of a row"""
+        for x in range(start_x, end_x):
+            yield self.windows[win].char_data[x][y]
+
+    def enumerate_range(self, win, start_x, end_x, start_y, end_y):
+        """Return an iterator of iterators the covers the range from
+           (start_x, start_y) to (end_x, end_y)"""
+        for y in range(start_y, end_y):
+            yield self.enumerate_row(win, start_x, end_x, y)
