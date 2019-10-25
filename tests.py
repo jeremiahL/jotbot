@@ -322,7 +322,7 @@ class TestScreenData(unittest.TestCase):
         self.assertEqual(f.char, ord(b'f'))
         self.assertEqual(list(f.attributes.enumerate()), [])
         self.assertEqual(g.char, ord(b'g'))
-        self.assertEqual(list(g.attributes.enumerate()), []) 
+        self.assertEqual(list(g.attributes.enumerate()), [])
 
     def test_clear(self):
         self.screen.cursor_x = 5
@@ -333,7 +333,24 @@ class TestScreenData(unittest.TestCase):
             self.screen.cursor_x = 5
             self.screen.cursor_y += 1
         self.screen.clear_rows(4, 5)
-           
+        self.screen.clear_cols(8, 10, 9)
+
+        y = 2
+        for (rng, row_list) in zip(self.screen.enumerate_range(screen.BASE_WINDOW, 4, 13, 2, 14),
+                                   [[None]*10,
+                                    [None, b'a', b'b', b'c', b'd', b'e', b'f', b'g', None],
+                                    [None]*10,
+                                    [None]*10,
+                                    [None, b'a', b'b', b'c', b'd', b'e', b'f', b'g', None],
+                                    [None, b'a', b'b', b'c', b'd', b'e', b'f', b'g', None],
+                                    [None, b'a', b'b', b'c', b'd', b'e', b'f', b'g', None],
+                                    [None, b'a', b'b', b'c', None, None, None, b'g', None],
+                                    [None, b'a', b'b', b'c', b'd', b'e', b'f', b'g', None],
+                                    [None, b'a', b'b', b'c', b'd', b'e', b'f', b'g', None],
+                                    [None, b'a', b'b', b'c', b'd', b'e', b'f', b'g', None],
+                                    [None]*10]):
+            for data, byte in zip(rng, row_list):
+                self.assertEqual(data.char, None if byte is None else ord(byte))
 
 if __name__ == '__main__':
     unittest.main() 
