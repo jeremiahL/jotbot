@@ -144,9 +144,9 @@ class TestScreenData(unittest.TestCase):
         for c in b'abcdefghijklmnopqrstuvwxyz':
             self.screen.set_char(c)
         self.assertEqual(b'abcdefghijklmnopqrstuvwxyz',
-                         bytes([data.char for data in self.screen.enumerate_row(screen.STATUS_WINDOW, 9, 35, 5)]))
+                         bytes([data.char for data in self.screen.enumerate_row(screen.STATUS_WINDOW, 9, 34, 5)]))
         self.assertEqual(b'jklmnop',
-                         bytes([data.char for data in self.screen.enumerate_row(screen.STATUS_WINDOW, 18, 25, 5)]))
+                         bytes([data.char for data in self.screen.enumerate_row(screen.STATUS_WINDOW, 18, 24, 5)]))
 
     def test_range_enumerate(self):
         self.screen.current_window = screen.INV_WINDOW
@@ -168,9 +168,172 @@ class TestScreenData(unittest.TestCase):
 
         # Enumerate a sub-piece of the window
         for b_row, s_row in zip((b'quic', b's ov', b' 123'),
-                                self.screen.enumerate_range(screen.INV_WINDOW, 22, 26, 7, 10)):
+                                self.screen.enumerate_range(screen.INV_WINDOW, 22, 25, 7, 9)):
             for byte, data in zip(b_row, s_row):
                 self.assertEqual(byte, data.char)
+
+    def test_clean_dirty(self):
+        for win in range(screen.NUM_WINDOWS):
+            self.assertFalse(self.screen.windows[win].has_dirty_data())
+
+        self.screen.current_window = screen.MAP_WINDOW
+        self.screen.cursor_x = 12
+        self.screen.cursor_y = 4
+        self.screen.set_char(ord(b'x'))
+        self.assertFalse(self.screen.windows[screen.MSG_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.INV_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.STATUS_WINDOW].has_dirty_data())
+        self.assertTrue(self.screen.windows[screen.MAP_WINDOW].has_dirty_data())
+        self.assertEqual(12, self.screen.windows[screen.MAP_WINDOW].dirty_x_min)
+        self.assertEqual(12, self.screen.windows[screen.MAP_WINDOW].dirty_x_max)
+        self.assertEqual( 4, self.screen.windows[screen.MAP_WINDOW].dirty_y_min)
+        self.assertEqual( 4, self.screen.windows[screen.MAP_WINDOW].dirty_y_max)
+
+        self.screen.cursor_x = 1
+        self.screen.cursor_y = 6
+        self.screen.set_tile(20, 1)
+        self.assertFalse(self.screen.windows[screen.MSG_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.INV_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.STATUS_WINDOW].has_dirty_data())
+        self.assertTrue(self.screen.windows[screen.MAP_WINDOW].has_dirty_data())
+        self.assertEqual( 1, self.screen.windows[screen.MAP_WINDOW].dirty_x_min)
+        self.assertEqual(12, self.screen.windows[screen.MAP_WINDOW].dirty_x_max)
+        self.assertEqual( 4, self.screen.windows[screen.MAP_WINDOW].dirty_y_min)
+        self.assertEqual( 6, self.screen.windows[screen.MAP_WINDOW].dirty_y_max)
+
+        self.screen.current_window = screen.INV_WINDOW
+        # clearing data that is not set has no effect
+        self.screen.clear_rows(9, 10)
+        self.assertFalse(self.screen.windows[screen.MSG_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.INV_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.STATUS_WINDOW].has_dirty_data())
+        self.assertTrue(self.screen.windows[screen.MAP_WINDOW].has_dirty_data())
+        self.assertEqual( 1, self.screen.windows[screen.MAP_WINDOW].dirty_x_min)
+        self.assertEqual(12, self.screen.windows[screen.MAP_WINDOW].dirty_x_max)
+        self.assertEqual( 4, self.screen.windows[screen.MAP_WINDOW].dirty_y_min)
+        self.assertEqual( 6, self.screen.windows[screen.MAP_WINDOW].dirty_y_max)
+
+        self.screen.current_window = screen.MSG_WINDOW
+        # clear data that is not set has no effect
+        self.screen.clear_cols(5, 21, 24)
+        self.assertFalse(self.screen.windows[screen.MSG_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.INV_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.STATUS_WINDOW].has_dirty_data())
+        self.assertTrue(self.screen.windows[screen.MAP_WINDOW].has_dirty_data())
+        self.assertEqual( 1, self.screen.windows[screen.MAP_WINDOW].dirty_x_min)
+        self.assertEqual(12, self.screen.windows[screen.MAP_WINDOW].dirty_x_max)
+        self.assertEqual( 4, self.screen.windows[screen.MAP_WINDOW].dirty_y_min)
+        self.assertEqual( 6, self.screen.windows[screen.MAP_WINDOW].dirty_y_max)
+
+        self.screen.clear_rows(8, 20, all_windows=True)
+        self.assertFalse(self.screen.windows[screen.MSG_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.INV_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.STATUS_WINDOW].has_dirty_data())
+        self.assertTrue(self.screen.windows[screen.MAP_WINDOW].has_dirty_data())
+        self.assertEqual( 1, self.screen.windows[screen.MAP_WINDOW].dirty_x_min)
+        self.assertEqual(12, self.screen.windows[screen.MAP_WINDOW].dirty_x_max)
+        self.assertEqual( 4, self.screen.windows[screen.MAP_WINDOW].dirty_y_min)
+        self.assertEqual( 6, self.screen.windows[screen.MAP_WINDOW].dirty_y_max)
+
+        self.screen.set_all_clean()
+        for win in range(screen.NUM_WINDOWS):
+            self.assertFalse(self.screen.windows[win].has_dirty_data())
+
+        # only data that was previously filled in become dirty
+        self.screen.clear_cols(3, 67, 4, all_windows=True)
+        self.assertFalse(self.screen.windows[screen.MSG_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.INV_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.STATUS_WINDOW].has_dirty_data())
+        self.assertTrue(self.screen.windows[screen.MAP_WINDOW].has_dirty_data())
+        self.assertEqual(12, self.screen.windows[screen.MAP_WINDOW].dirty_x_min)
+        self.assertEqual(12, self.screen.windows[screen.MAP_WINDOW].dirty_x_max)
+        self.assertEqual( 4, self.screen.windows[screen.MAP_WINDOW].dirty_y_min)
+        self.assertEqual( 4, self.screen.windows[screen.MAP_WINDOW].dirty_y_max)
+
+        # setup data in multiple windows
+        self.screen.current_window = screen.INV_WINDOW
+        self.screen.cursor_x = 1
+        self.screen.cursor_y = 1
+        self.screen.set_char(ord(b'b'))
+        self.screen.current_window = screen.MSG_WINDOW
+        self.screen.cursor_x = 75
+        self.screen.cursor_y = 21
+        self.screen.set_char(ord(b'v'))
+        self.assertTrue(self.screen.windows[screen.MSG_WINDOW].has_dirty_data())
+        self.assertTrue(self.screen.windows[screen.INV_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.STATUS_WINDOW].has_dirty_data())
+        self.assertTrue(self.screen.windows[screen.MAP_WINDOW].has_dirty_data())
+        self.assertEqual(12, self.screen.windows[screen.MAP_WINDOW].dirty_x_min)
+        self.assertEqual(12, self.screen.windows[screen.MAP_WINDOW].dirty_x_max)
+        self.assertEqual( 4, self.screen.windows[screen.MAP_WINDOW].dirty_y_min)
+        self.assertEqual( 4, self.screen.windows[screen.MAP_WINDOW].dirty_y_max)
+        self.assertEqual( 1, self.screen.windows[screen.INV_WINDOW].dirty_x_min)
+        self.assertEqual( 1, self.screen.windows[screen.INV_WINDOW].dirty_x_max)
+        self.assertEqual( 1, self.screen.windows[screen.INV_WINDOW].dirty_y_min)
+        self.assertEqual( 1, self.screen.windows[screen.INV_WINDOW].dirty_y_max)
+        self.assertEqual(75, self.screen.windows[screen.MSG_WINDOW].dirty_x_min)
+        self.assertEqual(75, self.screen.windows[screen.MSG_WINDOW].dirty_x_max)
+        self.assertEqual(21, self.screen.windows[screen.MSG_WINDOW].dirty_y_min)
+        self.assertEqual(21, self.screen.windows[screen.MSG_WINDOW].dirty_y_max)
+
+        # Set all windows to be clean
+        self.screen.set_all_clean()
+        for win in range(screen.NUM_WINDOWS):
+            self.assertFalse(self.screen.windows[win].has_dirty_data())
+
+        # Any data that gets cleared will be dirty
+        self.screen.clear_rows(2, 24, all_windows=True)
+        self.assertTrue(self.screen.windows[screen.MSG_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.INV_WINDOW].has_dirty_data())
+        self.assertFalse(self.screen.windows[screen.STATUS_WINDOW].has_dirty_data())
+        self.assertTrue(self.screen.windows[screen.MAP_WINDOW].has_dirty_data())
+        self.assertEqual( 1, self.screen.windows[screen.MAP_WINDOW].dirty_x_min)
+        self.assertEqual( 1, self.screen.windows[screen.MAP_WINDOW].dirty_x_max)
+        self.assertEqual( 6, self.screen.windows[screen.MAP_WINDOW].dirty_y_min)
+        self.assertEqual( 6, self.screen.windows[screen.MAP_WINDOW].dirty_y_max)
+        self.assertEqual(75, self.screen.windows[screen.MSG_WINDOW].dirty_x_min)
+        self.assertEqual(75, self.screen.windows[screen.MSG_WINDOW].dirty_x_max)
+        self.assertEqual(21, self.screen.windows[screen.MSG_WINDOW].dirty_y_min)
+        self.assertEqual(21, self.screen.windows[screen.MSG_WINDOW].dirty_y_max)
+
+    def test_screen_attrs(self):
+        self.screen.set_char(ord(b'a'))
+        self.screen.current_attributes.set(4)
+        self.screen.set_char(ord(b'b'))
+        self.screen.set_char(ord(b'c'))
+        self.screen.current_attributes.set(9)
+        self.screen.set_char(ord(b'd'))
+        self.screen.set_char(ord(b'e'))
+        self.screen.current_attributes.clear_all()
+        self.screen.set_char(ord(b'f'))
+        self.screen.set_char(ord(b'g'))
+
+        (a, b, c, d, e, f, g) = self.screen.enumerate_row(screen.BASE_WINDOW, 1, 7, 1)
+        self.assertEqual(a.char, ord(b'a'))
+        self.assertEqual(list(a.attributes.enumerate()), [])
+        self.assertEqual(b.char, ord(b'b'))
+        self.assertEqual(list(b.attributes.enumerate()), [4,])
+        self.assertEqual(c.char, ord(b'c'))
+        self.assertEqual(list(c.attributes.enumerate()), [4,])
+        self.assertEqual(d.char, ord(b'd'))
+        self.assertEqual(list(d.attributes.enumerate()), [4, 9])
+        self.assertEqual(e.char, ord(b'e'))
+        self.assertEqual(list(e.attributes.enumerate()), [4, 9])
+        self.assertEqual(f.char, ord(b'f'))
+        self.assertEqual(list(f.attributes.enumerate()), [])
+        self.assertEqual(g.char, ord(b'g'))
+        self.assertEqual(list(g.attributes.enumerate()), []) 
+
+    def test_clear(self):
+        self.screen.cursor_x = 5
+        self.screen.cursor_y = 3
+        for _ in range(10):
+            for ch in range(ord('a'), ord('g')+1):
+                self.screen.set_char(ch)
+            self.screen.cursor_x = 5
+            self.screen.cursor_y += 1
+        self.screen.clear_rows(4, 5)
+           
 
 if __name__ == '__main__':
     unittest.main() 

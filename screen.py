@@ -10,7 +10,7 @@ class CharAttributes:
         self.bitmap = 0
 
     def set(self, attr_num):
-        """Set the numbered attribute in the bitmask."""
+        """Set the numbered attribute in the bitmap."""
         self.bitmap |= (1 << attr_num)
 
     def check(self, attr_num):
@@ -23,7 +23,7 @@ class CharAttributes:
 
     def enumerate(self):
         """Return an iterator that returns the number of all set
-           attributes in the bitmask."""
+           attributes in the bitmap."""
         bits = self.bitmap
         pos = 0
         while bits:
@@ -33,8 +33,8 @@ class CharAttributes:
             bits >>= 1
 
     def copy_to(self, target):
-        """Copy all attributes in the current bitmask in to the
-           given bitmask."""
+        """Copy all attributes in the current bitmap in to the
+           given bitmap."""
         target.bitmap = self.bitmap
 
 class CharData:
@@ -48,8 +48,10 @@ class CharData:
 
     def clear(self):
         """Reset the character data back to empty with no attributes."""
+        changed = self.char is not None or self.attributes.bitmap != 0
         self.char = None
         self.attributes.clear_all()
+        return changed
 
 class TileData(CharData):
     """Extends CharData to also include tiledata"""
@@ -62,9 +64,11 @@ class TileData(CharData):
 
     def clear(self):
         """Reset the character data and tiledata back to empty."""
-        super().clear()
+        changed = super().clear()
+        changed = changed or self.tile_num is not None or self.tile_flag is not None
         self.tile_num = None
         self.tile_flag = None
+        return changed
 
 # vt_tiledata window numbers
 BASE_WINDOW = 0
@@ -85,16 +89,20 @@ class WindowData:
 
     def __init__(self, use_tile_data):
         """Initialize the window into an array of empty characters, all of which
-           are marked cleaned by default.
+           are marked cleaned by default. Screen data is 1-based indexes. For
+           simplicity you can index the arrays naturally. The 0 row and columns
+           are filled with "Nones" and should not be accessed.
            use_tile_data - if True fill the array with TileData, else CharData"""
         self.dirty_x_max = None
         self.dirty_x_min = None
         self.dirty_y_max = None
         self.dirty_y_min = None
         self.char_data = list()
-        for _ in range(COLUMNS):
+        self.char_data.append(None)
+        for _ in range(1, COLUMNS+1):
             window_col = list()
-            for _ in range(ROWS):
+            window_col.append(None)
+            for _ in range(1, ROWS+1):
                 if use_tile_data:
                     window_col.append(TileData())
                 else:
@@ -127,12 +135,14 @@ class WindowData:
                 self.dirty_x_max = x
             if y < self.dirty_y_min:
                 self.dirty_y_min = y
-            else:
+            elif y > self.dirty_y_max:
                 self.dirty_y_max = y
 
     def set_all_clean(self):
         """Set all character data objects in the window as clean and
            reset the dirty min/max coordinates (to None)"""
+        if not self.has_dirty_data():
+            return
         for x in range(self.dirty_x_min, self.dirty_x_max+1):
             for y in range(self.dirty_y_min, self.dirty_y_max+1):
                 self.char_data[x][y].dirty = False
@@ -148,14 +158,14 @@ class ScreenData:
        set for new characters."""
 
     def __init__(self):
-        """All windows are initialized empty, with the cursor set to 0,0 in the base window."""
+        """All windows are initialized empty, with the cursor set to 1,1 in the base window."""
         self.windows = list()
         for win in range(NUM_WINDOWS):
             self.windows.append(WindowData(use_tile_data=(win == MAP_WINDOW)))
         self.current_attributes = CharAttributes()
         self.current_window = BASE_WINDOW
-        self.cursor_x = 0
-        self.cursor_y = 0
+        self.cursor_x = 1
+        self.cursor_y = 1
 
     def get_current_data(self):
         """Return the CharData object at the cursor location in the current window."""
@@ -196,7 +206,7 @@ class ScreenData:
     def set_all_clean(self):
         """Sets the window data for all windows to be clean."""
         for window in range(0, NUM_WINDOWS):
-            self.windows[window].set_clean()
+            self.windows[window].set_all_clean()
 
     def _window_range(self, all_windows):
         """Internal function: all_windows==False, return a range of only the current window number
@@ -210,27 +220,27 @@ class ScreenData:
            start_y to end_y. all_windows==False(default), current window only.
            all_windows==True, all windows"""
         for win in self._window_range(all_windows):
-            for x in range(0, COLUMNS):
-                for y in range(start_y, end_y):
-                    self.get_data(win, x, y).clear()
-                    self.windows[win].set_dirty(x, y)
+            for x in range(1, COLUMNS+1):
+                for y in range(start_y, end_y+1):
+                    if self.get_data(win, x, y).clear():
+                        self.windows[win].set_dirty(x, y)
 
     def clear_cols(self, start_x, end_x, y, all_windows=False):
         """Clear character data and mark it dirty from
            start_x to end_x in row y. all_windows==False(default), current window only.
            all_windows==True, all windows"""
         for win in self._window_range(all_windows):
-            for x in range(start_x, end_x):
-                self.get_data(win, x, y).clear()
-                self.windows[win].set_dirty(x, y)
+            for x in range(start_x, end_x+1):
+                if self.get_data(win, x, y).clear():
+                    self.windows[win].set_dirty(x, y)
 
     def enumerate_row(self, win, start_x, end_x, y):
         """Return an iterator that returns a portion of a row"""
-        for x in range(start_x, end_x):
+        for x in range(start_x, end_x+1):
             yield self.windows[win].char_data[x][y]
 
     def enumerate_range(self, win, start_x, end_x, start_y, end_y):
         """Return an iterator of iterators the covers the range from
            (start_x, start_y) to (end_x, end_y)"""
-        for y in range(start_y, end_y):
+        for y in range(start_y, end_y+1):
             yield self.enumerate_row(win, start_x, end_x, y)
