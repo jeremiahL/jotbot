@@ -2,20 +2,93 @@
    It uses vt_tiledata to distinguish between multiple
    windows"""
 
+#These are the same as the VT100 SGR paramters.
+#Many of these are not used by nethack.
+ATTR_NORMAL = 0
+ATTR_BOLD = 1
+ATTR_FAINT = 2
+ATTR_INTENSITY_BITMASK = 0x6 # Intensity mutually exclusive
+ATTR_ITALIC = 3
+ATTR_UNDERLINE = 4
+ATTR_SBLINK = 5
+ATTR_RBLINK = 6
+ATTR_BLINK_BITMASK = 0x60 # Blink mutually exclusive
+ATTR_INVERSE = 7
+ATTR_CONCEAL = 8
+ATTR_STRIKE = 9 # Also called crossed-out
+ATTR_DEF_FONT = 10
+ATTR_ALT_FONT1 = 11
+ATTR_ALT_FONT2 = 12
+ATTR_ALT_FONT3 = 13
+ATTR_ALT_FONT4 = 14
+ATTR_ALT_FONT5 = 15
+ATTR_ALT_FONT6 = 16
+ATTR_ALT_FONT7 = 17
+ATTR_ALT_FONT8 = 18
+ATTR_ALT_FONT9 = 19
+ATTR_FONT_BITMASK = 0xffc00 # Font is mutually exclusive
+ATTR_FRAKTUR = 20
+ATTR_2X_UNDERLINE = 21 # Also clears bold
+ATTR_UNDERLINE_BITMASK = 0x400010
+ATTR_NORMAL_INTENSITY = 22
+ATTR_NOT_ITALIC = 23
+ATTR_NOT_UNDERLINE = 24
+ATTR_BLINK_OFF = 25
+# 26? No entry in the table?
+ATTR_INVERSE_OFF = 27
+ATTR_CONCEAL_OFF = 28
+ATTR_STRIKE_OFF = 29
+ATTR_BLACK_FG = 30
+ATTR_RED_FG = 31
+ATTR_GREEN_FG = 32
+ATTR_YELLOW_FG = 33
+ATTR_BLUE_FG = 34
+ATTR_MAGENTA_FG = 35
+ATTR_CYAN_FG = 36
+ATTR_WHITE_FG = 37
+ATTR_SET_COLOR_FG = 38
+ATTR_DEFAULT_FG = 39
+ATTR_FG_BITMASK = 0xffc0000000
+ATTR_BLACK_BG = 40
+ATTR_RED_BG = 41
+ATTR_GREEN_BG = 42
+ATTR_YELLOW_BG = 43
+ATTR_BLUE_BG = 44
+ATTR_MAGENTA_BG = 45
+ATTR_CYAN_BG = 46
+ATTR_WHITE_BG = 47
+ATTR_SET_COLOR_BG = 48
+ATTR_DEFAULT_BG = 49
+ATTR_BG_BITMASK = 0x3ff0000000000
+
 class CharAttributes:
-    """Represent character attributes such as bold, reverse, color, etc."""
+    """Represent character attributes such as bold, reverse, color, etc.
+       This is just a simple bitmap implementation, any extended meaning
+       or mutual exclusion of attributes is implemented in the parser."""
 
     def __init__(self):
         """Initializes an empty attributes object."""
         self.bitmap = 0
 
-    def set(self, attr_num):
-        """Set the numbered attribute in the bitmap."""
-        self.bitmap |= (1 << attr_num)
-
     def check(self, attr_num):
         """Return true if the numbered attribute is set."""
         return self.bitmap & (1 << attr_num)
+
+    def set(self, attr_num):
+        """Set the numbered attribute."""
+        self.set_mask(1 << attr_num)
+
+    def set_mask(self, bitmask):
+        """Set all the attributes in the given bitmask."""
+        self.bitmap |= bitmask
+
+    def clear(self, attr_num):
+        """Clear the number attribute"""
+        self.clear_mask(1 << attr_num)
+
+    def clear_mask(self, bitmask):
+        """Clear all the attributes in the given bitmask."""
+        self.bitmap &= ~bitmask
 
     def clear_all(self):
         """Clear all attributes that are currently set."""
@@ -167,6 +240,19 @@ class ScreenData:
         self.cursor_x = 1
         self.cursor_y = 1
 
+    def clamp_cursor(self):
+        """Enforces edge of screen rules for the cursor by clamping to
+           min/max values. Call this after any cursor move that could
+           have hit the edge of the screen."""
+        if self.cursor_x < 1:
+            self.cursor_x = 1
+        elif self.cursor_x > COLUMNS:
+            self.cursor_x = COLUMNS
+        if self.cursor_y < 1:
+            self.cursor_y = 1
+        elif self.cursor_y > ROWS:
+            self.cursor_y = ROWS
+
     def get_current_data(self):
         """Return the CharData object at the cursor location in the current window."""
         return self.get_data(self.current_window, self.cursor_x, self.cursor_y)
@@ -190,6 +276,7 @@ class ScreenData:
             self.current_attributes.copy_to(current_data.attributes)
             self.set_current_dirty()
         self.cursor_x += 1
+        self.clamp_cursor()
 
     def set_tile(self, num, flag):
         """Set the tiledata at the cursor location to the given tile number and flag.
