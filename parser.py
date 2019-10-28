@@ -111,7 +111,9 @@ class Parser:
 
     def handle_sgr_attribute(self, num):
         """The SGR escape controls the look of the characters, and the processing
-           of the options is surprisingly complicated."""
+           of the options is surprisingly complicated. It's unlikely that this is
+           really 100% correct for full vt100 terminal emulation, but it is at
+           least good enough to parse nethack."""
         # NORMAL == no attributes
         if num == screen.ATTR_NORMAL:
             self.screen.current_attributes.clear_all()
@@ -124,7 +126,8 @@ class Parser:
         for mask in exclusive_bitmasks:
             if mask & (1 << num):
                 self.screen.current_attributes.clear_mask(mask)
-                if num not in (screen.ATTR_DEFAULT_FG, screen.ATTR_DEFAULT_BG):
+                if num not in (screen.ATTR_DEFAULT_FONT, screen.ATTR_DEFAULT_FG,
+                               screen.ATTR_DEFAULT_BG):
                     self.screen.current_attributes.set(num)
                 return
 
@@ -139,16 +142,16 @@ class Parser:
         for attr, mask in negative_attrs:
             if num == attr:
                 self.screen.current_attributes.clear_mask(mask)
-            return
+                return
 
         # This attribute also clears bold in addition to setting the attr, for whatever reason
         if num == screen.ATTR_2X_UNDERLINE:
-            self.screen.current_attributes.clear(num)
+            self.screen.current_attributes.clear(screen.ATTR_BOLD)
 
         # simple bitmask set is the default
         self.screen.current_attributes.set(num)
 
-    def handle_escape_sequence(self, final_byte, seq): # pylint: disable=too-many-branches,too-many-statements
+    def handle_escape_sequence(self, final_byte, seq): # pylint: disable=too-many-branches,too-many-statements,too-many-locals
         """Handle the given escape syntax. Don't include actual escape (27) character
            and pass the final byte only in the separate argument."""
         if seq[0] == ord(b'['):
@@ -230,7 +233,24 @@ class Parser:
                 pass
             elif final_byte == ord(b'm'):
                 # Select Graphic Rendition
-                (num,) = self.parse_escape_args(seq, (0,))
+                extra_args = [None, None, None, None]
+                (num, extra_args[0], extra_args[1], extra_args[2], extra_args[3]) = \
+                    self.parse_escape_args(seq, (0, None, None, None, None))
+                # Annoyingly the "custom color" SGR can take arguments. The arguments are ignored
+                # for now and just the custom color flag is set without the rgb value, etc.
+                # Nethack doesn't seem to use these anyway. Just verify that no other SGR codes
+                # got unexpected arguments.
+                num_extra_args = 0
+                for i in range(4):
+                    if extra_args[i] is not None:
+                        num_extra_args += 1
+                if num in (screen.ATTR_SET_COLOR_FG, screen.ATTR_SET_COLOR_BG):
+                    if num_extra_args not in (2, 4):
+                        raise ParseException("Incorrect number of arguments to set color")
+                else:
+                    if num_extra_args != 0:
+                        raise ParseException("Unexpected argument to SGR escape")
+                self.handle_sgr_attribute(num)
             elif final_byte == ord(b'z'):
                 # nethack vt_tiledata escape
                 (version, td_code, num1, num2) = self.parse_escape_args(seq,

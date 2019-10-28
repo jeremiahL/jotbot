@@ -3,6 +3,7 @@
 import unittest
 
 import parser
+import screen
 
 class TestParser(unittest.TestCase):
     """Test the nethack parser object"""
@@ -189,6 +190,168 @@ class TestParser(unittest.TestCase):
         self.parser.parse_bytes(b'\a\t\v\f\x00\x1d')
         self.assertEqual(self.screen.cursor_x, 4)
         self.assertEqual(self.screen.cursor_y, 19)
+
+    def _assert_attributes(self, attr_list):
+        """Utility, assert that the current screen attributes are the passed in list."""
+        self.assertEqual(attr_list, list(self.screen.current_attributes.enumerate()))
+
+    def test_sgr_exclusion(self):
+        """The test the mutually exclusive attributes."""
+        self._assert_attributes([])
+
+        self.parser.parse_bytes(b'\x1b[ 1 m')
+        self._assert_attributes([screen.ATTR_BOLD])
+
+        self.parser.parse_bytes(b'\x1b[ 2 m')
+        self._assert_attributes([screen.ATTR_FAINT])
+
+        self.parser.parse_bytes(b'\x1b[ 5 m')
+        self._assert_attributes([screen.ATTR_FAINT, screen.ATTR_SLOW_BLINK])
+
+        self.parser.parse_bytes(b'\x1b[ 6 m')
+        self._assert_attributes([screen.ATTR_FAINT, screen.ATTR_RAPID_BLINK])
+
+        # Too many font and color codes not to use a loop
+        for (range_, negate) in ((range(screen.ATTR_ALTERNATE_FONT1,
+                                        screen.ATTR_ALTERNATE_FONT9+1),
+                                  screen.ATTR_DEFAULT_FONT),
+                                 (range(screen.ATTR_BLACK_FG,
+                                        screen.ATTR_SET_COLOR_FG+1),
+                                  screen.ATTR_DEFAULT_FG),
+                                 (range(screen.ATTR_BLACK_BG,
+                                        screen.ATTR_SET_COLOR_BG+1),
+                                  screen.ATTR_DEFAULT_BG)):
+            # Need to iterate multiple times
+            range_list = list(range_)
+            # Each code in the range is mutually exclusive
+            for char in range_list:
+                # set color requires 2 or 4 arguments, which are currently ignored
+                if char == screen.ATTR_SET_COLOR_FG:
+                    self.parser.parse_bytes(b'\x1b[ %d ; 5 ; 3 m' % char)
+                elif char == screen.ATTR_SET_COLOR_BG:
+                    self.parser.parse_bytes(b'\x1b[ %d ; 2 ; 255 ; 255 ; 255 m' % char)
+                else:
+                    self.parser.parse_bytes(b'\x1b[ %d m' % char)
+                self._assert_attributes([screen.ATTR_FAINT, screen.ATTR_RAPID_BLINK, char])
+            # The negate code cancels all codes in the range
+            for char in range_list:
+                # set color requires 2 or 4 arguments, which are currently ignored
+                if char == screen.ATTR_SET_COLOR_FG:
+                    self.parser.parse_bytes(b'\x1b[ %d ; 2 ; 128 ; 0 ; 64 m' % char)
+                elif char == screen.ATTR_SET_COLOR_BG:
+                    self.parser.parse_bytes(b'\x1b[ %d ; 5 ; 1 m' % char)
+                else:
+                    self.parser.parse_bytes(b'\x1b[ %d m' % char)
+                self._assert_attributes([screen.ATTR_FAINT, screen.ATTR_RAPID_BLINK, char])
+                self.parser.parse_bytes(b'\x1b[ %d m' % negate)
+                self._assert_attributes([screen.ATTR_FAINT, screen.ATTR_RAPID_BLINK])
+
+    def test_sgr_negate(self):
+        """Test sgr codes that negate other codes, except the font/color ones
+           that are already covered in the mutual exclusion test."""
+        # Just for "fun" set a color to start
+        self.parser.parse_bytes(b'\x1b[ 31 m')
+        self._assert_attributes([screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 1 m')
+        self._assert_attributes([screen.ATTR_BOLD, screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 22 m')
+        self._assert_attributes([screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 2 m')
+        self._assert_attributes([screen.ATTR_FAINT, screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 22 m')
+        self._assert_attributes([screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 3 m')
+        self._assert_attributes([screen.ATTR_ITALIC, screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 23 m')
+        self._assert_attributes([screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 4 m')
+        self._assert_attributes([screen.ATTR_UNDERLINE, screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 24 m')
+        self._assert_attributes([screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 1 m')
+        self._assert_attributes([screen.ATTR_BOLD, screen.ATTR_RED_FG])
+
+        # double underline also turns bold off
+        self.parser.parse_bytes(b'\x1b[ 21 m')
+        self._assert_attributes([screen.ATTR_2X_UNDERLINE, screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 24 m')
+        self._assert_attributes([screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 5 m')
+        self._assert_attributes([screen.ATTR_SLOW_BLINK, screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 25 m')
+        self._assert_attributes([screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 6 m')
+        self._assert_attributes([screen.ATTR_RAPID_BLINK, screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 25 m')
+        self._assert_attributes([screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 7 m')
+        self._assert_attributes([screen.ATTR_INVERSE, screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 27 m')
+        self._assert_attributes([screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 8 m')
+        self._assert_attributes([screen.ATTR_CONCEAL, screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 28 m')
+        self._assert_attributes([screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 9 m')
+        self._assert_attributes([screen.ATTR_STRIKE, screen.ATTR_RED_FG])
+
+        self.parser.parse_bytes(b'\x1b[ 29 m')
+        self._assert_attributes([screen.ATTR_RED_FG])
+
+    def test_sgr_clear(self):
+        """Test the SGR 0 clears all attributes."""
+        self.parser.parse_bytes(b'\x1b[ 1 m\x1b[ 3 m\x1b[ 6 m\x1b[ 7 m')
+        self._assert_attributes([screen.ATTR_BOLD, screen.ATTR_ITALIC,
+                                 screen.ATTR_RAPID_BLINK, screen.ATTR_INVERSE])
+
+        self.parser.parse_bytes(b'\x1b[ 0 m')
+        self._assert_attributes([])
+
+        self.parser.parse_bytes(b'\x1b[ 2 m\x1b[ 4 m\x1b[ 5 m\x1b[ 8 m')
+        self._assert_attributes([screen.ATTR_FAINT, screen.ATTR_UNDERLINE,
+                                 screen.ATTR_SLOW_BLINK, screen.ATTR_CONCEAL])
+
+        # no argument is same as 0
+        self.parser.parse_bytes(b'\x1b[m')
+        self._assert_attributes([])
+
+    def test_sgr_args(self):
+        """Test that only the custom color sgrs are allowed arguments."""
+        # This test is currently really slow. Either catching exceptions
+        # or re-constructing the parser is taking longer than expected.
+        worked = 0
+        for code in range(0, 50):
+            for num_args in range(1, 6):
+                try:
+                    self.parser.parse_bytes((b'\x1b[ %d '+(b' ; 9 '*num_args)+b' m') % code)
+                    # only a few cases should actually work
+                    self.assertTrue(num_args in (2, 4))
+                    self.assertTrue(code in (screen.ATTR_SET_COLOR_FG, screen.ATTR_SET_COLOR_BG))
+                    worked += 1
+                except parser.ParseException:
+                    # This is generally what we expect. Parser is invalid after exception reset.
+                    self.parser = parser.Parser()
+        # make sure the right number entered the "worked" case (otherwise would pass if all raised)
+        self.assertEqual(4, worked)
 
 if __name__ == '__main__':
     unittest.main()
