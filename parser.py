@@ -233,7 +233,8 @@ class Parser:
                 (num,) = self.parse_escape_args(seq, (0,))
             elif final_byte == ord(b'z'):
                 # nethack vt_tiledata escape
-                (version, td_code, num1, num2) = self.parse_escape_args(seq, (None, None, None))
+                (version, td_code, num1, num2) = self.parse_escape_args(seq,
+                                                                        (None, None, None, None))
                 if version != 1:
                     raise ParseException('Wrong version of vt_tiledata escape')
                 if td_code == 0:
