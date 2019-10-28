@@ -9,7 +9,10 @@ class TestDefaultSubprocess(unittest.TestCase):
     """Test the subprocess based server."""
 
     def setUp(self):
-        """The fixture is just the default subprocess object"""
+        """The fixture is just the default subprocess object. It assumes
+           complete control of an appropriate version of nethack installed
+           in the users home directory. Any save data and locks are cleared
+           before each test for consistency."""
         # constantly killing nethack messes up the locks
         os.system(b'rm ~/nh/install/games/lib/nethackdir/*lock* 2> /dev/null')
         # tests shouldn't use a savefile
