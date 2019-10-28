@@ -1,17 +1,20 @@
+"""Test the nethack parser module"""
 
 import unittest
 
 import parser
-import screen
 
 class TestParser(unittest.TestCase):
+    """Test the nethack parser object"""
 
     def setUp(self):
+        """Fixture is the Parser, we also pull out the screen object for
+           convenience/brevity in tests."""
         self.parser = parser.Parser()
-        # convenience
         self.screen = self.parser.screen
 
-    def test_cursor(self):
+    def test_cursor(self): # pylint: disable=too-many-statements
+        """Test all the escape sequences and characters that move the cursor."""
         self.assertEqual(self.screen.cursor_x, 1)
         self.assertEqual(self.screen.cursor_y, 1)
 
@@ -188,4 +191,4 @@ class TestParser(unittest.TestCase):
         self.assertEqual(self.screen.cursor_y, 19)
 
 if __name__ == '__main__':
-    unittest.main() 
+    unittest.main()

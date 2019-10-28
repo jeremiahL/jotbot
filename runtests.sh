@@ -5,7 +5,7 @@ set -e
 . ./venv/bin/activate
 
 # run pylint first (currently not on tests)
-pylint `ls *.py | fgrep -v _test.py`
+pylint *.py
 
 # run unittest files
 python -m unittest discover --pattern '*_test.py'
