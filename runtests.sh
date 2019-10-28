@@ -1,14 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 
-# setup
+# virtual-env setup
 set -e
 . ./venv/bin/activate
-set -x
 
-# tests
-pylint server.py screen.py parser.py
-python server_test.py
-python screen_test.py
-python parser_test.py
-set +x
+# run pylint first (currently not on tests)
+pylint `ls *.py | fgrep -v _test.py`
+
+# run unittest files
+python -m unittest discover --pattern '*_test.py'
+
 echo "All tests passed"
