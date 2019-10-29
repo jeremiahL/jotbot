@@ -18,29 +18,29 @@ class SubprocessNethack:
     def __init__(self, *args):
         """Run a nethack subprocess using the given command"""
         (parent_pty, child_pty) = pty.openpty()
-        self.input_pty = open(parent_pty, 'wb', buffering=0)
+        self.io_pty = open(parent_pty, 'br+', buffering=0)
         self.subproc = subprocess.Popen(args,
                                         stdin=child_pty,
-                                        stdout=subprocess.PIPE,
+                                        stdout=child_pty,
                                         bufsize=0, # unbuffered
                                         close_fds=True)
 
     def read(self, timeout=1.0):
         """Read data from nethack stdout if available, or if no data is
            available by the given timeout, return None"""
-        (readable, _, _) = select.select((self.subproc.stdout,), (), (),
+        (readable, _, _) = select.select((self.io_pty,), (), (),
                                          timeout)
         if readable:
-            return self.subproc.stdout.read(1024)
+            return self.io_pty.read(1024)
         return None
 
     def write(self, bytes_):
         """Write data to nethack stdin"""
-        self.input_pty.write(bytes_)
+        self.io_pty.write(bytes_)
 
     def terminate(self):
         """Immediately terminate the nethack subprocess with SIGTERM. This
            is intended to be used from tests."""
-        self.input_pty.close()
+        self.io_pty.close()
         self.subproc.terminate()
         self.subproc.communicate()

@@ -67,5 +67,39 @@ class TestDefaultSubprocess(unittest.TestCase):
         self.server.write(b'\n')
         parse_loop()
 
+    def test_num_lines(self):
+        """Send some 'canned' output to the server and parse the result. Really
+           a test for the parser, but easier to implement here. Just verifying
+           the parser can handle some "real" nethack output, even if it's
+           unpredictable."""
+        parser_ = parser.Parser()
+        output = list() # for debugging
+
+        def parse_loop():
+            """Read and parse until the read timeout"""
+            while True:
+                data = self.server.read()
+                if not data:
+                    break
+                #print(data)
+                output.append(data) # debugging
+                parser_.parse_bytes(data)
+            self.assertTrue(parser_.end_of_data)
+
+        parse_loop()
+        self.server.write(b'y') # shall I pick your class
+        parse_loop()
+        self.server.write(b'y') # is this OK?
+        parse_loop()
+        self.server.write(b' ') # Go bravely!
+        parse_loop()
+        self.server.write(b' ') # Welcome to nethack
+        parse_loop()
+        self.server.write(b'?') # Help command
+        parse_loop()
+        self.server.write(b'i') # list of all commands
+        parse_loop()
+        #print(output)
+
 if __name__ == '__main__':
     unittest.main()

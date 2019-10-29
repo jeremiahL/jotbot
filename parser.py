@@ -211,7 +211,8 @@ class Parser:
                 self.screen.clamp_cursor()
             elif final_byte == ord(b'H') or final_byte == ord(b'f'):
                 # Cursor Position
-                (x, y) = self.parse_escape_args(seq, (1, 1))
+                # y is first!
+                (y, x) = self.parse_escape_args(seq, (1, 1))
                 self.screen.cursor_x = x
                 self.screen.cursor_y = y
                 self.screen.clamp_cursor()

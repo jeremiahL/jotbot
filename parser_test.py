@@ -131,7 +131,7 @@ class TestParser(unittest.TestCase):
         self.assertEqual(self.screen.cursor_x, 1)
         self.assertEqual(self.screen.cursor_y, 24)
 
-        self.parser.parse_bytes(b'\x1b[ 10 ; 8 H')
+        self.parser.parse_bytes(b'\x1b[ 8 ; 10 H')
         self.assertEqual(self.screen.cursor_x, 10)
         self.assertEqual(self.screen.cursor_y, 8)
 
@@ -139,23 +139,23 @@ class TestParser(unittest.TestCase):
         self.assertEqual(self.screen.cursor_x, 1)
         self.assertEqual(self.screen.cursor_y, 1)
 
-        self.parser.parse_bytes(b'\x1b[ 0 ; 99 H') # clamp left and bottom
+        self.parser.parse_bytes(b'\x1b[ 99 ; 0 H') # clamp left and bottom
         self.assertEqual(self.screen.cursor_x, 1)
         self.assertEqual(self.screen.cursor_y, 24)
 
-        self.parser.parse_bytes(b'\x1b[ 99 ; 0 H') # clamp right and top
+        self.parser.parse_bytes(b'\x1b[ 0 ; 99 H') # clamp right and top
         self.assertEqual(self.screen.cursor_x, 80)
         self.assertEqual(self.screen.cursor_y, 1)
 
-        self.parser.parse_bytes(b'\x1b[ ; 14 H')
+        self.parser.parse_bytes(b'\x1b[ 14 ; H')
         self.assertEqual(self.screen.cursor_x, 1)
         self.assertEqual(self.screen.cursor_y, 14)
 
-        self.parser.parse_bytes(b'\x1b[ 56 ; H')
+        self.parser.parse_bytes(b'\x1b[ ; 56 H')
         self.assertEqual(self.screen.cursor_x, 56)
         self.assertEqual(self.screen.cursor_y, 1)
 
-        self.parser.parse_bytes(b'\x1b[ 13 ; 9 f')
+        self.parser.parse_bytes(b'\x1b[ 9 ; 13 f')
         self.assertEqual(self.screen.cursor_x, 13)
         self.assertEqual(self.screen.cursor_y, 9)
 
@@ -175,7 +175,7 @@ class TestParser(unittest.TestCase):
         self.assertEqual(self.screen.cursor_x, 5)
         self.assertEqual(self.screen.cursor_y, 24)
 
-        self.parser.parse_bytes(b'\x1b[ 28 ; 19 H')
+        self.parser.parse_bytes(b'\x1b[ 19 ; 28 H')
         self.assertEqual(self.screen.cursor_x, 28)
         self.assertEqual(self.screen.cursor_y, 19)
 
