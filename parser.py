@@ -10,6 +10,11 @@ class ParseException(Exception):
        occurred. The parser object will be in an undefined state
        after raising the exception."""
 
+# mini state machine for parsing tile escapes
+TILE_STATE_END = 1
+TILE_STATE_START = 2
+TILE_STATE_MID = 3
+
 class Parser:
     """Class representing the parser."""
 
@@ -22,6 +27,7 @@ class Parser:
         self.screen = screen.ScreenData()
         self.escape_sequence = None
         self.end_of_data = True
+        self.tile_state = TILE_STATE_END
 
     @staticmethod
     def is_parameter_byte(byte):
@@ -83,6 +89,17 @@ class Parser:
                 # Ignore other control characters
                 pass
             else:
+                # handle clearing tiledata state-machine
+                if self.screen.current_window == screen.MAP_WINDOW:
+                    if self.tile_state == TILE_STATE_END:
+                        # Writing data outside a tile escape clears the tiledata
+                        self.screen.get_current_data().clear_tile()
+                    elif self.tile_state == TILE_STATE_START:
+                        # a single char is allowed per tile
+                        self.tile_state = TILE_STATE_MID
+                    elif self.tile_state == TILE_STATE_MID:
+                        # got a second char in the tile
+                        raise ParseException('Multiple characters in tile')
                 self.screen.set_char(byte)
 
     @staticmethod
@@ -259,20 +276,32 @@ class Parser:
                     raise ParseException('Wrong version of vt_tiledata escape')
                 if td_code == 0:
                     # Start Glyph
+                    if self.tile_state != TILE_STATE_END:
+                        raise ParseException('Nested tiledata escapes')
+                    if self.screen.current_window != screen.MAP_WINDOW:
+                        raise ParseException('Tiledata outside of map window')
+                    self.tile_state = TILE_STATE_START
                     self.screen.set_tile(num1, num2)
                 elif td_code == 1:
-                    # End Glyph - currently ignored
+                    # End Glyph
                     if not (num1 is None and num2 is None):
                         raise ParseException('Unexpected argument to end glyph')
+                    if self.tile_state != TILE_STATE_MID:
+                        raise ParseException('Unexpected end glyph context')
+                    self.tile_state = TILE_STATE_END
                 elif td_code == 2:
                     # Switch Window
-                    self.screen.current_window = num1
-                    if num2 is None:
+                    if num2 is not None:
                         raise ParseException('Too many arguments to switch window')
+                    if self.tile_state != TILE_STATE_END:
+                        raise ParseException('Switch window during tiledata')
+                    self.screen.current_window = num1
                 elif td_code == 3:
                     # End of Data
                     if not (num1 is None and num2 is None):
                         raise ParseException('Unexpected argument to end-of-data')
+                    if self.tile_state != TILE_STATE_END:
+                        raise ParseException('End-of-date during tiledata')
                     self.end_of_data = True
                 else:
                     raise ParseException('Unrecognized vt_tiledata escape code')

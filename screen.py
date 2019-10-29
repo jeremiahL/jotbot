@@ -135,13 +135,18 @@ class TileData(CharData):
         self.tile_num = None
         self.tile_flag = None
 
-    def clear(self):
-        """Reset the character data and tiledata back to empty."""
-        changed = super().clear()
-        changed = changed or self.tile_num is not None or self.tile_flag is not None
+    def clear_tile(self):
+        """Clear only the tile data"""
+        changed = self.tile_num is not None or self.tile_flag is not None
         self.tile_num = None
         self.tile_flag = None
         return changed
+
+    def clear(self):
+        """Reset the character data and tiledata back to empty."""
+        changed1 = super().clear()
+        changed2 = self.clear_tile()
+        return changed1 or changed2
 
 # vt_tiledata window numbers
 BASE_WINDOW = 0

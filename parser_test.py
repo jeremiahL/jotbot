@@ -353,5 +353,82 @@ class TestParser(unittest.TestCase):
         # make sure the right number entered the "worked" case (otherwise would pass if all raised)
         self.assertEqual(4, worked)
 
+    def test_nethack_eod(self):
+        """Test the nethack end-of-data escape"""
+        self.assertTrue(self.parser.end_of_data)
+
+        self.parser.parse_bytes(b'abc')
+        self.assertFalse(self.parser.end_of_data)
+
+        self.parser.parse_bytes(b'\x1b[ 1 ; 3 z')
+        self.assertTrue(self.parser.end_of_data)
+
+        # Even an in-progress escape sequence should count as data
+        self.parser.parse_bytes(b'\x1b')
+        self.assertFalse(self.parser.end_of_data)
+
+        self.parser.parse_bytes(b'[ 1 ; 3 z')
+        self.assertTrue(self.parser.end_of_data)
+
+    def test_nethack_windows(self):
+        """Test the nethack escape to switch 'window' for output"""
+        self.assertEqual(self.screen.current_window, screen.BASE_WINDOW)
+
+        self.parser.parse_bytes(b'\x1b[ 1 ; 2 ; 1 z')
+        self.assertEqual(self.screen.current_window, screen.MSG_WINDOW)
+
+        self.parser.parse_bytes(b'a')
+        self.assertEqual(self.screen.windows[screen.MSG_WINDOW].char_data[1][1].char, ord(b'a'))
+
+        self.parser.parse_bytes(b'\x1b[ 1 ; 2 ; 2 z')
+        self.assertEqual(self.screen.current_window, screen.STATUS_WINDOW)
+
+        self.parser.parse_bytes(b'b')
+        self.assertEqual(self.screen.windows[screen.STATUS_WINDOW].char_data[2][1].char, ord(b'b'))
+
+        self.parser.parse_bytes(b'\x1b[ 1 ; 2 ; 3 z')
+        self.assertEqual(self.screen.current_window, screen.MAP_WINDOW)
+
+        self.parser.parse_bytes(b'c')
+        self.assertEqual(self.screen.windows[screen.MAP_WINDOW].char_data[3][1].char, ord(b'c'))
+
+        self.parser.parse_bytes(b'\x1b[ 1 ; 2 ; 4 z')
+        self.assertEqual(self.screen.current_window, screen.INV_WINDOW)
+
+        self.parser.parse_bytes(b'd')
+        self.assertEqual(self.screen.windows[screen.INV_WINDOW].char_data[4][1].char, ord(b'd'))
+
+        self.parser.parse_bytes(b'\x1b[ 1 ; 2 ; 0 z')
+        self.assertEqual(self.screen.current_window, screen.BASE_WINDOW)
+
+        self.parser.parse_bytes(b'e')
+        self.assertEqual(self.screen.windows[screen.BASE_WINDOW].char_data[5][1].char, ord(b'e'))
+
+    def test_tiledata(self):
+        """Test writing tiledata into the map window"""
+        # switch to the map window
+        self.parser.parse_bytes(b'\x1b[ 1 ; 2 ; 3 z')
+
+        # move into part of the "normal" map area
+        self.parser.parse_bytes(b'\x1b[ 5 ; 5 H')
+
+        # write out a tile
+        self.parser.parse_bytes(b'\x1b[ 1 ; 0 ; 7 ; 9 z\x1b[ 1 m\x1b[ 31 m@\x1b[ 1 ; 1 z')
+        data = self.screen.windows[screen.MAP_WINDOW].char_data[5][5]
+        self.assertEqual(ord(b'@'), data.char)
+        self.assertTrue(data.attributes.check(screen.ATTR_BOLD))
+        self.assertTrue(data.attributes.check(screen.ATTR_RED_FG))
+        self.assertEqual(7, data.tile_num)
+        self.assertEqual(9, data.tile_flag)
+
+        # overwrite the area outside a tile escape
+        self.parser.parse_bytes(b'\b\x1b[ 21 mh')
+        self.assertEqual(ord(b'h'), data.char)
+        self.assertTrue(data.attributes.check(screen.ATTR_RED_FG))
+        self.assertEqual(None, data.tile_num)
+        self.assertEqual(None, data.tile_flag)
+
+
+
 if __name__ == '__main__':
     unittest.main()
