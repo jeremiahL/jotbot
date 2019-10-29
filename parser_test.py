@@ -393,10 +393,10 @@ class TestParser(unittest.TestCase):
         self.assertEqual(self.screen.windows[screen.MAP_WINDOW].char_data[3][1].char, ord(b'c'))
 
         self.parser.parse_bytes(b'\x1b[ 1 ; 2 ; 4 z')
-        self.assertEqual(self.screen.current_window, screen.INV_WINDOW)
+        self.assertEqual(self.screen.current_window, 4)
 
         self.parser.parse_bytes(b'd')
-        self.assertEqual(self.screen.windows[screen.INV_WINDOW].char_data[4][1].char, ord(b'd'))
+        self.assertEqual(self.screen.windows[4].char_data[4][1].char, ord(b'd'))
 
         self.parser.parse_bytes(b'\x1b[ 1 ; 2 ; 0 z')
         self.assertEqual(self.screen.current_window, screen.BASE_WINDOW)
@@ -427,8 +427,6 @@ class TestParser(unittest.TestCase):
         self.assertTrue(data.attributes.check(screen.ATTR_RED_FG))
         self.assertEqual(None, data.tile_num)
         self.assertEqual(None, data.tile_flag)
-
-
 
 if __name__ == '__main__':
     unittest.main()

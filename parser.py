@@ -245,7 +245,7 @@ class Parser:
                 else:
                     raise ParseException('Illegal escape erase line code')
                 self.screen.clear_cols(start_x, end_x, self.screen.cursor_y, all_windows=True)
-            elif final_byte == ord(b'h') or final_byte == ord(b'l'):
+            elif final_byte in (ord(b'h'), ord(b'l'), ord(b't')):
                 # ignore some 'private' sequences
                 pass
             elif final_byte == ord(b'm'):

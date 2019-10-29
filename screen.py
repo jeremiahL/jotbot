@@ -153,8 +153,7 @@ BASE_WINDOW = 0
 MSG_WINDOW = 1
 STATUS_WINDOW = 2
 MAP_WINDOW = 3
-INV_WINDOW = 4
-NUM_WINDOWS = 5
+MAX_WINDOWS = 8
 
 COLUMNS = 80
 ROWS = 24
@@ -238,7 +237,7 @@ class ScreenData:
     def __init__(self):
         """All windows are initialized empty, with the cursor set to 1,1 in the base window."""
         self.windows = list()
-        for win in range(NUM_WINDOWS):
+        for win in range(MAX_WINDOWS):
             self.windows.append(WindowData(use_tile_data=(win == MAP_WINDOW)))
         self.current_attributes = CharAttributes()
         self.current_window = BASE_WINDOW
@@ -297,14 +296,14 @@ class ScreenData:
 
     def set_all_clean(self):
         """Sets the window data for all windows to be clean."""
-        for window in range(0, NUM_WINDOWS):
+        for window in range(0, MAX_WINDOWS):
             self.windows[window].set_all_clean()
 
     def _window_range(self, all_windows):
         """Internal function: all_windows==False, return a range of only the current window number
                               all_windows==True, return a range of all possible windows numbers."""
         if all_windows:
-            return range(0, NUM_WINDOWS)
+            return range(0, MAX_WINDOWS)
         return range(self.current_window, self.current_window + 1)
 
     def clear_rows(self, start_y, end_y, all_windows=False):

@@ -3,6 +3,7 @@
 import os
 import unittest
 
+import parser
 import server
 
 class TestDefaultSubprocess(unittest.TestCase):
@@ -38,6 +39,33 @@ class TestDefaultSubprocess(unittest.TestCase):
         data = self.server.read()
         #print(data)
         self.assertTrue(data)
+
+    def test_parser(self):
+        """Send some 'canned' output to the server and parse the result. Really
+           a test for the parser, but easier to implement here. Just verifying
+           the parser can handle some "real" nethack output, even if it's
+           unpredictable."""
+        parser_ = parser.Parser()
+        output = list() # for debugging
+
+        def parse_loop():
+            """Read and parse until the read timeout"""
+            while True:
+                data = self.server.read()
+                if not data:
+                    break
+                #print(data)
+                output.append(data) # debugging
+                parser_.parse_bytes(data)
+            self.assertTrue(parser_.end_of_data)
+
+        parse_loop()
+        self.server.write(b'y')
+        parse_loop()
+        self.server.write(b'y')
+        parse_loop()
+        self.server.write(b'\n')
+        parse_loop()
 
 if __name__ == '__main__':
     unittest.main()
